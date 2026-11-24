@@ -1,0 +1,5 @@
+["Determinisation: the teacher deals the unseen cards at random and plays each deal out.",
+ "The original sampler kept the opponent's discard pile exactly, which no player ever sees.",
+ "The public sampler pools the opponent's draw pile, hand and discard; only Bureaucrat's top cards are public (Harbinger, Artisan, Sentry are private).",
+ "Same observation gives identical grades; tested with swaps that keep or change what a player can see.",
+ "Of 31 proposed overrides on the bank, 74% hold on its own values; under the public sampler 61% and with an opponent mixture 71%, versus 52% for the original view at 64 draws."]

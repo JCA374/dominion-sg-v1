@@ -1,6 +1,30 @@
 {
  "episodes": [
   {
+   "n": 5,
+   "title": "Episode 05: What a player can know",
+   "date": "Tue 24 Nov 2026, 14:17",
+   "minutes": 4.3,
+   "mp3": "../podcast/episode-05.mp3",
+   "notes": [
+    "Determinisation: the teacher deals the unseen cards at random and plays each deal out.",
+    "The original sampler kept the opponent's discard pile exactly, which no player ever sees.",
+    "The public sampler pools the opponent's draw pile, hand and discard; only Bureaucrat's top cards are public (Harbinger, Artisan, Sentry are private).",
+    "Same observation gives identical grades; tested with swaps that keep or change what a player can see.",
+    "Of 31 proposed overrides on the bank, 74% hold on its own values; under the public sampler 61% and with an opponent mixture 71%, versus 52% for the original view at 64 draws."
+   ],
+   "transcript": [
+    "A search in a card game has a problem that chess does not. You cannot see your opponent's hand, or the order of your own deck. So how can the teacher play a position to the end? This episode is about how it deals with hidden cards, a quiet flaw in how it did that, and the test that checks whether the flaw mattered.",
+    "The method is called determinisation. Before each rollout, the teacher fills in everything it cannot see with one random guess that agrees with what it can see. My own draw pile has known contents but an unknown order, so it gets shuffled. The opponent's hidden cards get dealt at random. Then the game is played to the end as if that guess were true. Thirty two rollouts means thirty two guesses. Averaging over the guesses approximates the average over the real uncertainty, as long as each guess is drawn from the right distribution.",
+    "Here is the catch: from the right distribution. A guess must only use information a player really has. A simple test captures this. If two game states look identical to the player, the teacher must give them identical grades. To make that exact, the teacher first sorts every hidden zone into a fixed order, and only then shuffles with the seed. Two states that differ only in hidden details then produce the same thirty two deals, card for card.",
+    "The reviewer spotted the flaw. The original sampler shuffled the opponent's hand and draw pile together, but it kept the opponent's discard pile exactly as it was. A real player cannot know that. When your opponent ends a turn, the cards left in their hand go to the discard pile face down. You never see them. So the teacher knew slightly more than a player could. It also reshuffled cards that everyone had seen placed on the opponent's deck.",
+    "So I built a public view. In it, the opponent's draw pile, hand and discard pile are pooled together and dealt again at their visible sizes. That is pessimistic, because a careful player remembers some of the discard pile. The truth lies between the two views. I also had to work out which cards on top of a deck are public. In this card set only one card makes them public: the Bureaucrat. It puts a Silver on its owner's deck, and it makes the victim put a victory card back, both in plain view. Harbinger, Artisan and Sentry put cards back that only their owner sees. The tracker follows this at every decision. A shuffle makes a pile unknown again. A draw removes the top. And growth of a pile is private exactly when the previous decision was its owner's Harbinger, Artisan or Sentry choice. Tests check all of it. Swapping an opponent's discarded card with a hidden card in their deck gives identical grades in the public view, but different grades in the original view. A public top card is never moved.",
+    "There is a second hidden assumption. During a rollout, the opponent is played by its real network. But our network is never told who it plays. A lesson measured against one particular opponent might not hold against another. So the teacher can also play the opponent's side with a fixed mixture: our network, the earlier network, an older champion, and the genetic algorithm player, one after another across the deals.",
+    "The test. On the held out bank, the teacher would override our network in thirty one positions. Against the bank's own high precision values, seventy four percent of those still beat our network's choice by more than two points. Then I regraded each one with sixty four fresh deals in four ways. The original view kept fifty two percent. The public view kept sixty one percent. The opponent mixture kept sixty one. And both together kept seventy one. Thirty one positions is a small sample, and sixty four deals is still noisy, so read these as similar, not as an improvement. The important result is that the public view does not undo the teacher's lessons. The teacher was not winning by peeking.",
+    "That closes the groundwork. The next episode will be about the race between the two training branches, when it finishes."
+   ]
+  },
+  {
    "n": 4,
    "title": "Episode 04: Teaching without breaking",
    "date": "Tue 24 Nov 2026, 14:03",
