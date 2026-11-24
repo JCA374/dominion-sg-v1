@@ -1659,13 +1659,13 @@
 "cpu_hours": "6.2015"
 },
 "A_s2": {
-"iter": "14",
-"eval_vs_c2": "0.4775",
-"eval_vs_c1": "0.5075",
-"eval_GA_base": "0.8925",
-"eval_champion": "0.72",
-"games_total": "42000",
-"cpu_hours": "0.9155"
+"iter": "34",
+"eval_vs_c2": "0.445",
+"eval_vs_c1": "0.55",
+"eval_GA_base": "0.9025",
+"eval_champion": "0.725",
+"games_total": "102000",
+"cpu_hours": "2.1941"
 },
 "B_s1": {
 "iter": "100",
