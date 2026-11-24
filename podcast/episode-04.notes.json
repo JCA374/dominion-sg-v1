@@ -1,0 +1,5 @@
+["Pairwise loss: verified gain x softplus(-(logit_b - logit_c)); slope = logistic(-d), the Bradley-Terry form.",
+ "Anchor: KL(frozen c2 || new net) on 84,575 of c2's own positions (all decision kinds) + the win estimate; gradient = new minus frozen probabilities.",
+ "lambda 1: 98% of training pairs learnt, anchors broke (buy agreement 72%); one variant scored 21.7% vs c2.",
+ "lambda 100: agreement 97%, held-out pairs barely move; dev match 52.5% [49.3, 55.8] (best of 5 settings).",
+ "305 training lessons are too few to teach a transferable rule; branch B starts from the lambda-100 net."]
