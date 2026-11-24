@@ -1,0 +1,3 @@
+{"t": "2026-11-24T07:54:29", "kind": "run_start", "note": "Frozen manifests written (ablation 300, dev 300, matrix 500, promotion 2,000 fresh kingdoms) and the shared exclusion list (8,197 kingdoms)."}
+{"t": "2026-11-24T07:54:29", "kind": "stage_start", "stage": "1 Teacher ablation", "expect": "buy search repeats its earlier gain (59%); action search adds something on top (earlier +4 points, interval -2.5 to +10.5)"}
+{"t": "2026-11-24T07:56:00", "kind": "note", "title": "Ablation arm done: mirror 50.0%", "text": "600 games, 95% interval 50.0\u201350.0%; buy overrides 0.0% of buys, action overrides 0 of 0 graded; capped 2, errors 0; latency None."}

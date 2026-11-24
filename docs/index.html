@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview</title>
+<link rel="stylesheet" href="style.css?v=d5cc2c7c">
+</head>
+<body>
+<main>
+<header class="hero">
+  <h1>Can search teach a Dominion network to play better than more self-play would?</h1>
+  <p class="lede">RL-v3 c2 is the strongest network of this Dominion project. A slow rollout teacher (BV-v1) that tries every buy or action to the end of the game beats it by 9–12 points. Here c2 learns the teacher's <em>verified</em> improvements and then continues PPO (branch B), against the same PPO from plain c2 (branch A). A branch is promoted when it scores at least 53% against frozen c2 on 2,000 fresh kingdoms, both seats, with the paired 95% lower bound above 50%.</p>
+  <p class="countdown" id="countdown"></p>
+</header>
+
+<section>
+  <h2>Status now</h2>
+  <div class="cards" id="cards"></div>
+  <p class="muted small">Numbers come from the run files and update every 15 minutes. Details on the <a href="training.html">Training</a> tab.</p>
+</section>
+
+<section>
+  <h2>What this is</h2>
+  <p>Dominion is a two-player deck-building card game: each turn you play action cards and then buy cards with the coins in your hand; whoever owns the most victory points when the game ends wins. Every model here plays the base set (26 kingdom cards; 10 per game) with the Steam rules.</p>
+<p>c2 is a single network (413 inputs → 256 → 256 → 34 options + a win estimate) that answers every decision in one forward pass. The BV-v1 teacher answers a decision differently: for each candidate buy (or action), it copies the game, deals the hidden cards at random 32 times, plays each copy to the end with c2 for both players, and keeps the candidate that wins most often, but only when it beats c2's own choice by more than 2 points and 2 standard errors. Example: with $6 c2 buys Gold; the teacher finds that Laboratory wins 61% of the rollouts against Gold's 52%, and plays Laboratory. That teacher scored 59% against plain c2 (300 games), and 62% when it also chose actions, but it costs seconds per decision.</p>
+<p>The question is whether that knowledge can be put into c2's weights, so it costs nothing at play time, and whether it survives further PPO training. A fair answer needs a control: the same PPO, the same games, from plain c2.</p>
+</section>
+
+<section>
+  <h2>Approach</h2>
+  <p>Four steps, in the order the handoff gives. <b>1.</b> A matched ablation of the teacher (buy search, action search, both, and a plain mirror) on one frozen game manifest and one frozen build. <b>2.</b> A pilot dataset: c2 plays, the teacher labels each decision, and the winner of each label is re-checked on 32 independent draws; a held-out bank of 1,000 positions is graded again with 128–512 draws for every legal option. <b>3.</b> c2 is trained to put each verified winner above its own choice (a pairwise loss weighted by the verified gain), held to its own policy and value on 85,000 of its own positions. <b>4.</b> Matched PPO: A from c2, B from the supervised c2, two training seeds each, the same 3,000 games per iteration on the same kingdoms.</p>
+<pre class="diagram">
+ frozen manifests ──► 1 ablation (4 arms, 600 games each) ──► which teacher to label with
+                                         │
+ c2 plays, teacher grades ──► 2 pilot labels (20k) ──► verification draws ──► held-out bank
+                                         │
+ c2's own positions (anchors) ──► 3 supervised c2 ──► bank + dev match
+                                         │
+                        ┌────────────────┴────────────────┐
+                 A: PPO from c2                    B: PPO from supervised c2
+                        └────────────── 4 matrix + 2,000-kingdom promotion ──► decision
+</pre>
+<p>Numbers: the net has 181,000 parameters and plays a game in about 5 ms; a teacher game takes 6–11 s on one core (30–50 s when 7 workers share the 4-core laptop); one PPO iteration (3,000 games + update + 1,500 evaluation games) takes about a minute.</p>
+</section>
+
+<section>
+  <h2>Decisions <span class="muted small">newest first · why things are the way they are</span></h2>
+  <p class="muted small">Logged with <code>python experiments/journal.py --decision "title" "what was chosen and why" "what was rejected"</code>.</p>
+  <div id="decisions"></div>
+</section>
+
+<section>
+  <h2>How to read this site</h2>
+  <div id="guide"></div>
+</section>
+
+<section>
+  <h2>Repo layout</h2>
+  <pre>
+sg-v1/
+  engine/          the rules (submodule, same commit as both trainers)
+  rl-v3/           the network and PPO (submodule)
+  bv-v1/           the rollout teacher, labels, matches, the bank (submodule)
+  manifests/       frozen games (ablation, dev, matrix, promotion) + kingdoms never trained on
+  ablation.py      step 1        pilot.py    step 2        supervise.py   step 3        ppo.py   step 4
+  anchors.py       c2's own positions for the supervised step
+  netmatch.py      matches between nets      bank_eval.py  a net on the bank      survive.py  the observation check
+  pipeline.py      runs the steps by predeclared rules (the "pipeline" run on this site)
+  results/         every measurement (JSON)      models/   candidate and released nets
+  docs/            this site
+</pre>
+</section>
+</main>
+<footer>Updated automatically every 15 minutes. Numbers are measured on fresh episodes, not estimated.</footer>
+<script src="site.js?v=5e6b53cb"></script>
+<script src="common.js?v=cf5d53e1"></script>
+<script src="project.js?v=092dcfd4"></script>
+<script src="overview.js?v=cb92b7c0"></script>
+</body>
+</html>

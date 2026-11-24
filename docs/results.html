@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results</title>
+<link rel="stylesheet" href="style.css?v=d5cc2c7c">
+</head>
+<body>
+<main>
+<h1>Results</h1>
+<p class="lede">Every measurement of the four steps, read from <code>results/</code>. Scores are match points (win 1, tie ½, loss 0) for the first model, both seats of every kingdom; intervals are 95% bootstrap intervals over kingdom pairs. Numbers marked <em>dev</em> are development numbers: they chose settings and are not the final test.</p>
+<section><h2>1 · Teacher ablation</h2><p class="muted small">c2 with the teacher against plain c2, 300 fresh kingdoms × 2 seats, one frozen build, settings k0 = k1 = 32, top-5 buys, margin 0.02, z 2.</p><div id="abl"></div><div id="ablp"></div></section>
+<section><h2>2 · Pilot labels, bank and survival</h2><div id="pilot"></div></section>
+<section><h2>3 · Supervised c2</h2><div id="sup"></div></section>
+<section><h2>4 · Matched PPO</h2><div id="ppo"></div></section>
+<section><h2>Matches between nets</h2><div id="matches"></div></section>
+<section><h2>Decision</h2><div id="decision"><p class="muted">Not yet: the promotion match is played once, at the end.</p></div></section>
+</main>
+<script src="site.js?v=5e6b53cb"></script>
+<script src="common.js?v=cf5d53e1"></script>
+<script src="project.js?v=092dcfd4"></script>
+<script src="results.js?v=4c6f2259"></script>
+</body>
+</html>

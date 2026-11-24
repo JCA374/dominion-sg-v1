@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speed</title>
+<link rel="stylesheet" href="style.css?v=d5cc2c7c">
+</head>
+<body>
+<main>
+<h1>Speed</h1>
+<p class="lede">The machine: a 4-core / 8-thread laptop CPU (i5-8250U), 7 GB RAM, no GPU. Everything is measured, not estimated.</p>
+<section><h2>Where the time goes</h2>
+<p>A teacher rollout (one candidate, one hidden-card draw, played to the end with c2 for both players) takes about 1.6 ms on an idle core and about 5 ms when 7 workers share the 4 cores. A buy decision with 6 candidates at 32 draws is about 200 rollouts; with validation, 260. A teacher game costs 6–11 s on one core; a plain-net game 5 ms. Earlier profiling (BV-v1) put 83% of a rollout in the network's forward pass and under 3% in the rules; its sparse forward pass (fastnet) gave 2.2× end to end.</p></section>
+<section><h2>Optimisations from the handoff, measured</h2>
+<div class="tablewrap"><table><tr><th>change</th><th>acceptance test</th><th>result</th></tr>
+<tr><td>prepare each hidden-state draw once for all candidates</td><td>identical per-draw grades, masks, moves, caps and errors (12 games, both modes)</td><td>identical; preparations 6.6× fewer (8,032 → 1,216 per two buy-teacher games), wall time unchanged (12.8 s → 12.8 s): preparation is a negligible part of a rollout</td></tr>
+<tr><td>no record buffers in score-only games</td><td>same games</td><td>5.3 → 5.1 ms per evaluation game (3–5%)</td></tr>
+<tr><td>skip GA genome lookup for network seats</td><td>–</td><td>0.04 ms per lookup: not changed</td></tr>
+<tr><td>PPO records concatenated while releasing each part</td><td>identical arrays (test)</td><td>peak memory: one copy of an iteration's records (~0.8 GB of features at 3,000 games) instead of two</td></tr>
+</table></div></section>
+</main>
+<script src="site.js?v=5e6b53cb"></script>
+<script src="common.js?v=cf5d53e1"></script>
+<script src="project.js?v=092dcfd4"></script>
+
+</body>
+</html>

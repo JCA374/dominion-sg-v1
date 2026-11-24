@@ -1,0 +1,193 @@
+{
+ "title": "Dominion sg-v1: Search-Guided c2",
+ "icon": "🧭",
+ "repo": "JCA374/dominion-sg-v1",
+ "goal": {
+  "metric": "score",
+  "target": 0.53,
+  "label": "vs frozen c2 (2,000 fresh kingdoms, both seats)",
+  "columns": []
+ },
+ "goal_text": "a branch at least 53% against frozen RL-v3 c2 on 2,000 fresh kingdoms, both seats, paired 95% lower bound above 50%, no regression against GA2",
+ "names": {},
+ "chart": {
+  "x": "iter",
+  "x_label": "PPO iteration (3,000 games each)",
+  "y_label": "score % vs frozen c2 (200 eval games)",
+  "series": [
+   {
+    "key": "eval_vs_c2",
+    "label": "vs frozen c2",
+    "style": "both",
+    "color": "--accent"
+   },
+   {
+    "key": "eval_vs_c1",
+    "label": "vs frozen c1",
+    "style": "both",
+    "color": "--good"
+   }
+  ]
+ },
+ "charts": [
+  {
+   "title": "Ablation: running score of each arm (pipeline run, vs plain c2)",
+   "x": "hours",
+   "percent": true,
+   "series": [
+    {
+     "key": "abl_mirror_score",
+     "label": "mirror"
+    },
+    {
+     "key": "abl_buy_score",
+     "label": "buy teacher"
+    },
+    {
+     "key": "abl_action_score",
+     "label": "action teacher"
+    },
+    {
+     "key": "abl_both_score",
+     "label": "both"
+    }
+   ]
+  },
+  {
+   "title": "Ablation: kingdom pairs played per arm",
+   "x": "hours",
+   "percent": false,
+   "series": [
+    {
+     "key": "abl_mirror_pairs",
+     "label": "mirror"
+    },
+    {
+     "key": "abl_buy_pairs",
+     "label": "buy"
+    },
+    {
+     "key": "abl_action_pairs",
+     "label": "action"
+    },
+    {
+     "key": "abl_both_pairs",
+     "label": "both"
+    }
+   ]
+  },
+  {
+   "title": "Pilot labels collected",
+   "x": "hours",
+   "percent": false,
+   "series": [
+    {
+     "key": "pilot_labels",
+     "label": "positions"
+    }
+   ]
+  },
+  {
+   "title": "PPO: score vs the GA base (400 eval games)",
+   "percent": true,
+   "series": [
+    {
+     "key": "eval_GA_base",
+     "label": "GA base"
+    }
+   ]
+  },
+  {
+   "title": "PPO: approximate KL per update",
+   "percent": false,
+   "series": [
+    {
+     "key": "kl",
+     "label": "KL"
+    }
+   ]
+  },
+  {
+   "title": "PPO: entropy",
+   "percent": false,
+   "series": [
+    {
+     "key": "entropy",
+     "label": "entropy"
+    }
+   ]
+  },
+  {
+   "title": "PPO: CPU hours used",
+   "percent": false,
+   "series": [
+    {
+     "key": "cpu_hours",
+     "label": "CPU hours"
+    }
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "label": "PPO games",
+   "key": "games_total",
+   "fmt": "k",
+   "sub": "training games in this run"
+  }
+ ],
+ "stale_minutes": 60,
+ "alive_pattern": "[-]-run {run}( |$)",
+ "main_run": "pipeline",
+ "push_globs": [
+  "runs/pipeline/*",
+  "results/*.json",
+  "results/*/*.json",
+  "experiments/journal.jsonl"
+ ],
+ "tab_labels": {
+  "inputs.html": "The data"
+ },
+ "tabs": [
+  [
+   "index.html",
+   "Overview"
+  ],
+  [
+   "results.html",
+   "Results"
+  ],
+  [
+   "log.html",
+   "Log"
+  ],
+  [
+   "training.html",
+   "Training"
+  ],
+  [
+   "curriculum.html",
+   "Curriculum"
+  ],
+  [
+   "inputs.html",
+   "The data"
+  ],
+  [
+   "model.html",
+   "The model"
+  ],
+  [
+   "speed.html",
+   "Speed"
+  ],
+  [
+   "study.html",
+   "Study"
+  ],
+  [
+   "lessons.html",
+   "Lessons"
+  ]
+ ]
+}

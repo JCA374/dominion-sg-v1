@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curriculum</title>
+<link rel="stylesheet" href="style.css?v=d5cc2c7c">
+</head>
+<body>
+<main>
+<h1>Curriculum</h1>
+<p class="lede">Every run's stages: the world, the reward, the check that ends the stage, the cap and the expected outcome, written down <i>before</i> the stage starts.</p>
+<div class="box"><h3>What earlier projects taught</h3><ul>
+<li>RL-v3: a turn planner at play time gave no gain (48–50%); improvements came from training. The teacher here plays to the end of the game, not one turn.</li>
+<li>BV-v1: a separate Deep Sets student of the buy teacher stayed at 50% after 480,000 labels: here c2 itself is the student, starting from its own policy.</li>
+<li>BV-v1: noise overrides cost points (a 16-draw teacher without a gate scored 41.5%); the z-gate and independent validation draws keep only real gains.</li></ul></div>
+<div id="runs"></div>
+</main>
+<script src="site.js?v=5e6b53cb"></script>
+<script src="common.js?v=cf5d53e1"></script>
+<script src="project.js?v=092dcfd4"></script>
+<script src="curriculum.js?v=9a10b8a4"></script>
+</body>
+</html>

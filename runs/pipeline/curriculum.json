@@ -1,0 +1,37 @@
+{
+ "note": "The handoff's run order: ablation -> pilot labels -> supervised c2 -> matched PPO (A vs B).",
+ "stages": [
+  {
+   "name": "1 Teacher ablation",
+   "world": "c2 + teacher vs plain c2 on 300 fresh kingdoms x 2 seats, one frozen build: mirror, buy teacher, action teacher, both (32 draws, top-5 buys, margin 0.02, z 2)",
+   "pass": "all four arms played; the simplest arm whose paired interval is above 50% chooses what the pilot labels",
+   "expect": "buy search repeats its earlier gain (59%); action search adds something on top (earlier +4 points, interval -2.5 to +10.5)",
+   "reward": "match score: win 1, tie 1/2, loss 0",
+   "cap": "none"
+  },
+  {
+   "name": "2 Pilot dataset",
+   "world": "c2 plays, the teacher labels (fixed 32 draws) and validates each graded winner on 32 independent draws; random kingdoms + attack / Gardens / trasher / engine slices; opponents c2, c1, RL-v1, GA2",
+   "pass": "20,000 positions of one cohort; a frozen held-out bank (1,000 positions, all legal options, 128 draws, 100 at 512) replays exactly; survival under the public sampler and an opponent mixture measured",
+   "expect": "a few percent of positions are verified improvements; most survive the public view",
+   "reward": "match score: win 1, tie 1/2, loss 0",
+   "cap": "none"
+  },
+  {
+   "name": "3 Supervised c2",
+   "world": "c2 itself as the student: a masked pairwise loss raises each verified winner above c2's choice, weighted by the verified gain; KL to frozen c2 and its value on c2's own positions as anchors",
+   "pass": "held-out pairs move toward the winner with small anchor drift; the bank says the changes help; a dev match",
+   "expect": "a small, targeted change: anchor argmax agreement stays above 99%",
+   "reward": "match score: win 1, tie 1/2, loss 0",
+   "cap": "none"
+  },
+  {
+   "name": "4 Matched PPO",
+   "world": "A from plain c2, B from supervised c2; the same open-league PPO, game budget and training stream per seed (two seeds); frozen c2 and c1 in the league",
+   "pass": "promotion: >= 53% vs frozen c2 on 2,000 fresh kingdoms, paired lower bound > 50%, no regression vs GA2",
+   "expect": "B starts ahead of A; the question is whether it stays ahead after the same PPO",
+   "reward": "match score: win 1, tie 1/2, loss 0",
+   "cap": "none"
+  }
+ ]
+}

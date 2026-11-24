@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study</title>
+<link rel="stylesheet" href="style.css?v=d5cc2c7c">
+</head>
+<body>
+<main>
+<h1>Study this project</h1>
+<p class="lede">For someone who wants to learn from this project rather than follow it: what to read in which order, the ideas
+you need, the words we use, how to run it yourself, and a few exercises.</p>
+
+<section>
+  <h2>Reading order</h2>
+  <ol id="order">
+<li><b>Overview</b> (5 min): the question, the four steps, the diagram.</li>
+<li><b>The data</b> (10 min): what one label is, what "verified" means, the splits and what a player can know.</li>
+<li><b>Results</b> (10 min): the ablation table first, then each step as it finishes.</li>
+<li><b>The model</b> (5 min): the network and the two losses (pairwise + anchors, then PPO).</li>
+<li><b>Training</b> and <b>Log</b>: the PPO curves of A and B, and every decision with its reason.</li>
+<li>Code: <code>bv-v1/c/bv.c</code> (<code>bv_grade</code>, <code>bv_validate</code>, <code>bv_decide_main</code>: the teacher), <code>supervise.py</code> (the supervised step), <code>rl-v3/train.py</code> (<code>ppo_update</code>, <code>make_games</code>), <code>ablation.py</code> and <code>pipeline.py</code> (the experiment's order and rules).</li>
+</ol>
+</section>
+
+<section>
+  <h2>Key concepts</h2>
+  <div class="box"><h3>Paired rollouts</h3><p>Every candidate is played out on the same hidden-card draws, so the comparison removes the luck of the draw: the difference between two candidates has a much smaller variance than either value. Shows up in <code>bv_grade</code> (bv.c) and in every SE on the Results tab. Common mistake: comparing unpaired means and calling 52% vs 50% a difference.</p></div>
+<div class="box"><h3>Verified improvement</h3><p>The best graded candidate is re-tested against c2's choice on fresh, independent draws before it is taught. Picking the maximum of six noisy estimates flatters the winner (winner's curse); the validation removes that bias. Shows up as VG / VSE in the labels. Common mistake: training on the raw argmax of noisy grades.</p></div>
+<div class="box"><h3>Anchors (KL regularisation)</h3><p>The supervised loss alone would move c2 everywhere; the KL to frozen c2 on 85,000 of its own positions holds it in place except where a label pulls. Shows up in <code>supervise.py</code> and as "anchor KL" and "argmax agreement" on Results. Common mistake: anchoring only on the labelled decision kind, letting routine subdecisions (discards, trashing) drift.</p></div>
+<div class="box"><h3>The PPO ratio and the temperature</h3><p>PPO compares the new policy's probability of a sampled move with the probability the sampler used. If the sampler divided logits by a temperature and the update did not, every ratio is wrong from the first step (3.6% were already outside the clip band at temperature 0.7). Shows up in <code>rl-v3/train.py</code> <code>policy_logp</code> and its test. Common mistake: checking the ratio only at temperature 1, where the bug is invisible.</p></div>
+<div class="box"><h3>Matched control</h3><p>Branch A gets exactly what B gets except the supervised step: the same start, settings, game budget and, per seed, the same kingdoms and opponents at every iteration. Otherwise a difference could come from the stream. Common mistake: comparing a new branch with an old run trained under other settings.</p></div>
+<div class="box"><h3>Frozen manifests and exclusions</h3><p>The games every comparison is played on are written once, before any game, and no kingdom of them is ever trained or labelled on. Shows up in <code>manifests/</code> and the match manifests (source and library hashes). Common mistake: tuning on the test kingdoms, or resuming a match with different settings.</p></div>
+<div class="box"><h3>Simulator view vs public view</h3><p>The teacher deals the cards a player cannot see; the original sampler kept the opponent's discard pile exactly, which a player never knows. Shows up in <code>docs/observation.md</code> and survive.py. Common mistake: a teacher that wins partly by peeking.</p></div>
+</section>
+
+<section>
+  <h2>Glossary</h2>
+  <p class="muted small">From <code>glossary.md</code> in the repo (one <code>**term** — meaning</code> per line). The podcast narration uses the same list for names that need a pronunciation.</p>
+  <dl class="glossary" id="glossary"></dl>
+</section>
+
+<section>
+  <h2>Reproduce it</h2>
+  <pre>
+git clone --recursive https://github.com/JCA374/dominion-sg-v1 && cd dominion-sg-v1
+# Python: a venv with numpy and torch (CPU), e.g. the rl-v3 one: python -m venv .venv && .venv/bin/pip install numpy torch
+.venv/bin/python -m pytest -q rl-v3/tests          # 27 tests, ~15 s (C builds on first use)
+(cd bv-v1 && ../.venv/bin/python -m pytest -q tests)   # 22 tests, ~2 min
+.venv/bin/python ablation.py --arms mirror,buy --workers 7    # mirror ~1 min, buy teacher ~45 min on 4 cores
+.venv/bin/python ablation_report.py                  # results/ablation.json
+.venv/bin/python anchors.py --games 600 --name a1    # 85k positions, ~2 min
+</pre><p>Run on a 4-core laptop CPU. The pilot (20,000 labels) takes a few hours, each PPO run of 100 iterations about 1.5 hours.</p>
+</section>
+
+<section>
+  <h2>Exercises</h2>
+  <ol>
+<li><b>See the temperature bug.</b> In <code>rl-v3/train.py</code> make <code>policy_logp</code> ignore <code>temp</code>, run <code>pytest rl-v3/tests/test_ppo_fixes.py -k ratio</code>. Expect the mean ratio error at temperature 0.7 to jump from ~1e-7 to ~0.05.</li>
+<li><b>Peek or not.</b> Run <code>survive.py</code> after the pilot and compare "simulator" and "public": how many of the teacher's overrides need the opponent's discard pile?</li>
+<li><b>Fewer draws.</b> Run the buy arm with <code>--k0 16 --k1 16</code> (ablation.py's SETTINGS) on the same manifest and compare with the 32-draw arm pair by pair. Expect more overrides and a lower score: noise overrides.</li>
+<li><b>Anchor strength.</b> Run <code>supervise.py</code> with <code>--lam 0.1</code> and <code>--lam 10</code>: plot held-out pair accuracy against anchor KL. Where does a dev match (<code>netmatch.py</code>) peak?</li>
+</ol>
+</section>
+</main>
+<script src="site.js?v=5e6b53cb"></script>
+<script src="common.js?v=cf5d53e1"></script>
+<script src="project.js?v=092dcfd4"></script>
+<script src="study.js?v=ca69f153"></script>
+</body>
+</html>

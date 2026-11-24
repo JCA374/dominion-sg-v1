@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The data</title>
+<link rel="stylesheet" href="style.css?v=d5cc2c7c">
+</head>
+<body>
+<main>
+<h1>The data</h1>
+<p class="lede">The data of this project is labels: positions from real games, each with the teacher's grade of every candidate. This page describes one label, how they are made and checked, and what a player could actually know.</p>
+<section><h2>One label</h2>
+<p>c2 plays a game (it keeps control: its choices are never changed while labelling). At a decision with two or more options, the teacher grades the candidates: for a buy the shortlist is c2's choice, PASS and c2's five next-best buys (all legal buys when there are few); for an action decision every legal action card and PASS (end the action phase). Each candidate is played to the end of the game on the same 32 hidden-card draws (paired), with c2 continuing for both players. The row stores:</p>
+<ul><li><b>X</b>: c2's 413 inputs at that moment (own cards, own draw pile, opponent's cards, supply, coins, buys, turn, the helper inputs);</li>
+<li><b>LEGAL</b> and <b>CAND</b>: the legal options and the graded ones; <b>INC</b>: c2's choice (the incumbent);</li>
+<li><b>Q</b>: each candidate's mean result (win 1, tie ½, loss 0) and <b>SE</b>: the standard error of its paired difference to c2's choice; <b>K</b>: draws; <b>CAPS</b>: rollouts that hit the round cap;</li>
+<li><b>VG, VSE, VK</b>: the validation: the best candidate against c2's choice again, on 32 independent draws;</li>
+<li><b>KIND</b>, <b>DIDX</b> and the game's kingdom, seed, seat and opponent: enough to replay the game to exactly this position.</li></ul>
+<p>A <b>verified improvement</b> is a row whose best candidate beats c2's choice on the validation draws by more than 2 points and 2 standard errors. Only those teach.</p></section>
+<section><h2>Splits and leakage</h2>
+<p>Kingdoms are split by a hash: 10% dev (choosing settings), 10% test (held out: the bank and the final label report), 80% train. No kingdom of any frozen manifest (ablation, dev, matrix, promotion) or of BV-v1's evaluation streams is ever labelled or trained on: one exclusion list (8,197 kingdoms) is passed to label collection and to PPO. Every shard carries a cohort id (engine and source hashes, sampler, policies, grading settings), and only one cohort is pooled.</p></section>
+<section><h2>Checks</h2>
+<p>A label replays: the bank regrades each held-out position from its replay key and refuses it unless the features, kind, incumbent and legal options are identical. Errored rollouts give no label; an errored game gives no labels at all. The bank grades every legal option at 128 draws (the first 100 positions at 512), so it also measures what the five-buy shortlist misses.</p></section>
+<section><h2>What a player can know</h2>
+<p>The network's inputs are all reconstructable from public play (the Steam autopilot rebuilds them from the screen). The teacher's original sampler, however, keeps the opponent's discard pile exactly, which no player sees. A second, "public" sampler pools the opponent's draw pile, hand and discard pile and keeps only its public top cards (Bureaucrat's). The survival check regrades the proposed overrides with it, and with a mixture of opponents in the rollouts, because c2 is never told who it plays.</p></section>
+</main>
+<script src="site.js?v=5e6b53cb"></script>
+<script src="common.js?v=cf5d53e1"></script>
+<script src="project.js?v=092dcfd4"></script>
+</body>
+</html>

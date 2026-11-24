@@ -4,3 +4,5 @@ __pycache__/
 /data/
 *.pt
 publish_loop.pid
+.venv
+/runs/[AB]*

@@ -1,0 +1,2 @@
+t,stage,hours,abl_mirror_pairs,abl_mirror_score,abl_buy_pairs,abl_buy_score,abl_action_pairs,abl_action_score,abl_both_pairs,abl_both_score,pilot_labels,ppo_iterations
+2026-11-24T08:30:24,1 Teacher ablation,0.599,300,0.5,261,0.5623,0,,0,,0,0

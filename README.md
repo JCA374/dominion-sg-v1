@@ -1,4 +1,5 @@
 # sg-v1 — search-guided training of RL-v3 c2
+\n**🌐 Live site: https://jca374.github.io/dominion-sg-v1/**
 
 Does teaching RL-v3 c2 the verified improvements of the BV-v1 rollout teacher, and then continuing PPO, give a
 stronger model than PPO alone from the same start? This trainer carries out the handoff

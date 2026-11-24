@@ -1,0 +1,1 @@
+{"pipeline":[{"t":"2026-11-24T08:30:24","stage":"1 Teacher ablation","hours":"0.599","abl_mirror_pairs":"300","abl_mirror_score":"0.5","abl_buy_pairs":"261","abl_buy_score":"0.5623","abl_action_pairs":"0","abl_action_score":"","abl_both_pairs":"0","abl_both_score":"","pilot_labels":"0","ppo_iterations":"0"}]}
