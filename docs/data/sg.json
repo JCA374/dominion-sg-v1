@@ -368,7 +368,573 @@
 }
 }
 },
-"decision": null,
+"decision": {
+"iteration": 100,
+"candidates": {
+"A": "s2",
+"B": "s2"
+},
+"branches": {
+"A": {
+"run": "A_s2",
+"net": "rl-v3/runs/A_s2/net_100.npy",
+"vs_c2": {
+"score": 0.514,
+"ci95": [
+0.5004,
+0.528
+]
+},
+"vs_ga2": {
+"score": 0.8648,
+"ci95": [
+0.8532,
+0.8756
+]
+},
+"worst_card_slice": [
+"Merchant",
+{
+"pairs": 791,
+"score": 0.8451,
+"baseline": 0.854,
+"diff": -0.0088
+}
+],
+"card_slices": {
+"Artisan": {
+"pairs": 776,
+"score": 0.8711,
+"baseline": 0.8734,
+"diff": -0.0023
+},
+"Bandit": {
+"pairs": 755,
+"score": 0.8735,
+"baseline": 0.8762,
+"diff": -0.0026
+},
+"Bureaucrat": {
+"pairs": 807,
+"score": 0.8544,
+"baseline": 0.8556,
+"diff": -0.0012
+},
+"Cellar": {
+"pairs": 782,
+"score": 0.8542,
+"baseline": 0.8472,
+"diff": 0.007
+},
+"Chapel": {
+"pairs": 758,
+"score": 0.9113,
+"baseline": 0.9142,
+"diff": -0.003
+},
+"Council Room": {
+"pairs": 790,
+"score": 0.8418,
+"baseline": 0.8323,
+"diff": 0.0095
+},
+"Festival": {
+"pairs": 735,
+"score": 0.8816,
+"baseline": 0.8728,
+"diff": 0.0088
+},
+"Gardens": {
+"pairs": 766,
+"score": 0.889,
+"baseline": 0.8874,
+"diff": 0.0016
+},
+"Harbinger": {
+"pairs": 762,
+"score": 0.8478,
+"baseline": 0.8366,
+"diff": 0.0112
+},
+"Laboratory": {
+"pairs": 760,
+"score": 0.8852,
+"baseline": 0.8753,
+"diff": 0.0099
+},
+"Library": {
+"pairs": 754,
+"score": 0.8375,
+"baseline": 0.8425,
+"diff": -0.005
+},
+"Market": {
+"pairs": 748,
+"score": 0.8797,
+"baseline": 0.8777,
+"diff": 0.002
+},
+"Merchant": {
+"pairs": 791,
+"score": 0.8451,
+"baseline": 0.854,
+"diff": -0.0088
+},
+"Militia": {
+"pairs": 782,
+"score": 0.8555,
+"baseline": 0.8606,
+"diff": -0.0051
+},
+"Mine": {
+"pairs": 791,
+"score": 0.8473,
+"baseline": 0.8398,
+"diff": 0.0076
+},
+"Moat": {
+"pairs": 778,
+"score": 0.8544,
+"baseline": 0.8599,
+"diff": -0.0055
+},
+"Moneylender": {
+"pairs": 783,
+"score": 0.8388,
+"baseline": 0.8346,
+"diff": 0.0042
+},
+"Poacher": {
+"pairs": 795,
+"score": 0.8623,
+"baseline": 0.8676,
+"diff": -0.0053
+},
+"Remodel": {
+"pairs": 757,
+"score": 0.8596,
+"baseline": 0.8633,
+"diff": -0.0036
+},
+"Sentry": {
+"pairs": 768,
+"score": 0.9229,
+"baseline": 0.9277,
+"diff": -0.0049
+},
+"Smithy": {
+"pairs": 769,
+"score": 0.8553,
+"baseline": 0.8492,
+"diff": 0.0062
+},
+"Throne Room": {
+"pairs": 783,
+"score": 0.8547,
+"baseline": 0.8589,
+"diff": -0.0042
+},
+"Vassal": {
+"pairs": 745,
+"score": 0.8674,
+"baseline": 0.8695,
+"diff": -0.002
+},
+"Village": {
+"pairs": 752,
+"score": 0.8816,
+"baseline": 0.8836,
+"diff": -0.002
+},
+"Witch": {
+"pairs": 760,
+"score": 0.8477,
+"baseline": 0.8342,
+"diff": 0.0135
+},
+"Workshop": {
+"pairs": 753,
+"score": 0.8689,
+"baseline": 0.8549,
+"diff": 0.0139
+}
+},
+"gate": {
+"vs_c2": false,
+"vs_ga2": true,
+"card_slices": true
+},
+"promoted": false
+},
+"B": {
+"run": "B_s2",
+"net": "rl-v3/runs/B_s2/net_100.npy",
+"vs_c2": {
+"score": 0.4991,
+"ci95": [
+0.4856,
+0.5124
+]
+},
+"vs_ga2": {
+"score": 0.8725,
+"ci95": [
+0.862,
+0.8834
+]
+},
+"worst_card_slice": [
+"Poacher",
+{
+"pairs": 795,
+"score": 0.861,
+"baseline": 0.8676,
+"diff": -0.0066
+}
+],
+"card_slices": {
+"Artisan": {
+"pairs": 776,
+"score": 0.8795,
+"baseline": 0.8734,
+"diff": 0.0061
+},
+"Bandit": {
+"pairs": 755,
+"score": 0.8841,
+"baseline": 0.8762,
+"diff": 0.0079
+},
+"Bureaucrat": {
+"pairs": 807,
+"score": 0.8569,
+"baseline": 0.8556,
+"diff": 0.0012
+},
+"Cellar": {
+"pairs": 782,
+"score": 0.8721,
+"baseline": 0.8472,
+"diff": 0.0249
+},
+"Chapel": {
+"pairs": 758,
+"score": 0.9195,
+"baseline": 0.9142,
+"diff": 0.0053
+},
+"Council Room": {
+"pairs": 790,
+"score": 0.8509,
+"baseline": 0.8323,
+"diff": 0.0187
+},
+"Festival": {
+"pairs": 735,
+"score": 0.8888,
+"baseline": 0.8728,
+"diff": 0.016
+},
+"Gardens": {
+"pairs": 766,
+"score": 0.9005,
+"baseline": 0.8874,
+"diff": 0.0131
+},
+"Harbinger": {
+"pairs": 762,
+"score": 0.857,
+"baseline": 0.8366,
+"diff": 0.0203
+},
+"Laboratory": {
+"pairs": 760,
+"score": 0.8875,
+"baseline": 0.8753,
+"diff": 0.0122
+},
+"Library": {
+"pairs": 754,
+"score": 0.8525,
+"baseline": 0.8425,
+"diff": 0.0099
+},
+"Market": {
+"pairs": 748,
+"score": 0.8907,
+"baseline": 0.8777,
+"diff": 0.013
+},
+"Merchant": {
+"pairs": 791,
+"score": 0.8644,
+"baseline": 0.854,
+"diff": 0.0104
+},
+"Militia": {
+"pairs": 782,
+"score": 0.8593,
+"baseline": 0.8606,
+"diff": -0.0013
+},
+"Mine": {
+"pairs": 791,
+"score": 0.8483,
+"baseline": 0.8398,
+"diff": 0.0085
+},
+"Moat": {
+"pairs": 778,
+"score": 0.8692,
+"baseline": 0.8599,
+"diff": 0.0093
+},
+"Moneylender": {
+"pairs": 783,
+"score": 0.8499,
+"baseline": 0.8346,
+"diff": 0.0153
+},
+"Poacher": {
+"pairs": 795,
+"score": 0.861,
+"baseline": 0.8676,
+"diff": -0.0066
+},
+"Remodel": {
+"pairs": 757,
+"score": 0.8709,
+"baseline": 0.8633,
+"diff": 0.0076
+},
+"Sentry": {
+"pairs": 768,
+"score": 0.932,
+"baseline": 0.9277,
+"diff": 0.0042
+},
+"Smithy": {
+"pairs": 769,
+"score": 0.8521,
+"baseline": 0.8492,
+"diff": 0.0029
+},
+"Throne Room": {
+"pairs": 783,
+"score": 0.8697,
+"baseline": 0.8589,
+"diff": 0.0109
+},
+"Vassal": {
+"pairs": 745,
+"score": 0.8742,
+"baseline": 0.8695,
+"diff": 0.0047
+},
+"Village": {
+"pairs": 752,
+"score": 0.8943,
+"baseline": 0.8836,
+"diff": 0.0106
+},
+"Witch": {
+"pairs": 760,
+"score": 0.8411,
+"baseline": 0.8342,
+"diff": 0.0069
+},
+"Workshop": {
+"pairs": 753,
+"score": 0.8639,
+"baseline": 0.8549,
+"diff": 0.009
+}
+},
+"gate": {
+"vs_c2": false,
+"vs_ga2": true,
+"card_slices": true
+},
+"promoted": false
+}
+},
+"matrix": {
+"A_s1 vs c2": {
+"score": 0.51,
+"ci95": [
+0.4855,
+0.534
+],
+"pairs": 500
+},
+"A_s1 vs c1": {
+"score": 0.514,
+"ci95": [
+0.488,
+0.54
+],
+"pairs": 500
+},
+"A_s1 vs rl1": {
+"score": 0.717,
+"ci95": [
+0.6905,
+0.7455
+],
+"pairs": 500
+},
+"A_s1 vs ga2": {
+"score": 0.876,
+"ci95": [
+0.854,
+0.8975
+],
+"pairs": 500
+},
+"A_s2 vs c2": {
+"score": 0.519,
+"ci95": [
+0.4935,
+0.545
+],
+"pairs": 500
+},
+"A_s2 vs c1": {
+"score": 0.541,
+"ci95": [
+0.515,
+0.568
+],
+"pairs": 500
+},
+"A_s2 vs rl1": {
+"score": 0.715,
+"ci95": [
+0.6865,
+0.7435
+],
+"pairs": 500
+},
+"A_s2 vs ga2": {
+"score": 0.8645,
+"ci95": [
+0.8425,
+0.886
+],
+"pairs": 500
+},
+"B_s1 vs c2": {
+"score": 0.501,
+"ci95": [
+0.474,
+0.5285
+],
+"pairs": 500
+},
+"B_s1 vs c1": {
+"score": 0.5325,
+"ci95": [
+0.507,
+0.5585
+],
+"pairs": 500
+},
+"B_s1 vs rl1": {
+"score": 0.723,
+"ci95": [
+0.6945,
+0.7515
+],
+"pairs": 500
+},
+"B_s1 vs ga2": {
+"score": 0.874,
+"ci95": [
+0.853,
+0.894
+],
+"pairs": 500
+},
+"B_s2 vs c2": {
+"score": 0.546,
+"ci95": [
+0.519,
+0.572
+],
+"pairs": 500
+},
+"B_s2 vs c1": {
+"score": 0.548,
+"ci95": [
+0.52,
+0.574
+],
+"pairs": 500
+},
+"B_s2 vs rl1": {
+"score": 0.706,
+"ci95": [
+0.678,
+0.734
+],
+"pairs": 500
+},
+"B_s2 vs ga2": {
+"score": 0.8505,
+"ci95": [
+0.8275,
+0.873
+],
+"pairs": 500
+},
+"B_s1 vs A_s1": {
+"score": 0.538,
+"ci95": [
+0.512,
+0.565
+],
+"pairs": 500
+},
+"B_s2 vs A_s2": {
+"score": 0.512,
+"ci95": [
+0.485,
+0.54
+],
+"pairs": 500
+},
+"c2 vs ga2": {
+"score": 0.8635,
+"ci95": [
+0.8415,
+0.886
+],
+"pairs": 500
+}
+},
+"baseline_c2_vs_ga2": {
+"score": 0.8632,
+"ci95": [
+0.852,
+0.8736
+]
+},
+"label_cost": {
+"labels": 20120,
+"games": 707,
+"rollouts": 4463104,
+"capped_rollouts": 11607,
+"engine_errors": 0,
+"rejected": 0,
+"wall_secs": 2828,
+"workers": 7,
+"cpu_hours_approx": 5.5,
+"note": "Branch B's extra cost before PPO: the pilot labels (7 workers x 47 min). The bank and survival check are evaluation, not training cost; the supervised fit took about 3 minutes."
+},
+"b_beats_a": false,
+"promoted": [],
+"summary": "Promotion (2,000 fresh kingdoms x 2 seats) vs frozen c2: A (A_s2) 51.4% [50.0, 52.8], B (B_s2) 49.9% [48.6, 51.2]. B vs A head to head (matrix): s1 53.8%, s2 51.2%. Promoted: none. B consistently better than A: False."
+},
 "supervise": {
 "s_z1_l1": {
 "args": {
@@ -1854,6 +2420,32 @@
 "errors": 0,
 "done": true,
 "t": "2026-11-24 17:34"
+},
+"promo_B_s2_it100_vs_c2": {
+"games": 4000,
+"pairs": 2000,
+"score": 0.4991,
+"ci95": [
+0.4856,
+0.5124
+],
+"capped": 6,
+"errors": 0,
+"done": true,
+"t": "2026-11-24 17:35"
+},
+"promo_B_s2_it100_vs_ga2": {
+"games": 4000,
+"pairs": 2000,
+"score": 0.8725,
+"ci95": [
+0.862,
+0.8834
+],
+"capped": 0,
+"errors": 0,
+"done": true,
+"t": "2026-11-24 17:39"
 },
 "promo_c2_vs_ga2": {
 "games": 4000,
