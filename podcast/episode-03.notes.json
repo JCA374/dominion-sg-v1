@@ -1,0 +1,5 @@
+["300 fresh kingdoms x 2 seats, one frozen build: mirror, buy teacher, action teacher, both.",
+ "The mirror scores exactly 50%: a deterministic policy against itself on the same seed plays the same game from both seats.",
+ "Intervals: bootstrap over kingdom pairs (4,000 resamples).",
+ "Buy 56.0% [53.0, 59.0], action 55.1% [52.4, 57.9], both 58.8% [55.6, 62.1]; both minus buy +2.8 points [-1.2, +6.7].",
+ "Median buy-teacher decision 0.8 s, 95th percentile 2.6 s: why the knowledge must move into the network."]
