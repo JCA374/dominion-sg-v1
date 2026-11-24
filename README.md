@@ -65,7 +65,12 @@ Live table; `results/` has the files.
 | 1 | Ablation: action teacher on c2 vs c2 (600 games; 1.9% of actions overridden; p50 0.40 s, p95 1.13 s) | **55.1%** [52.4, 57.9] |
 | 1 | Ablation: both on c2 vs c2 (600 games; p50 0.47 s, p95 1.86 s) | **58.8%** [55.6, 62.1] |
 | 1 | Paired: both − buy / both − action / action − buy (300 kingdom pairs) | +2.8 [−1.2, +6.7] / +3.8 [−0.4, +7.8] / −0.9 [−4.9, +3.2] points |
-| 2 | Pilot labels: buy-only (the simplest arm that reproduces a gain), 20,000 positions, 32 validation draws | collecting |
+| 2 | Pilot labels: buy-only (the simplest arm that reproduces a gain), one cohort, 32 validation draws | 20,120 positions, 389 verified improvements (1.9%); ~5 CPU hours |
+| 2 | Held-out bank: 1,000 test-split positions, all legal buys at 128 draws (100 at 512), 30% decisive | 0 replay mismatches; c2 regret 0.017; best buy outside the top-5 shortlist 5.0%; label teacher overrides 3.1% (harmful 0.5%, good 2.3%) |
+| 2 | Survival of the 31 proposed overrides on the bank (64 fresh draws) | still > margin: simulator 52%, public 61%, mixture 61%, public + mixture 71% (bank values: 74%): the public view does not undo them |
+| 3 | Supervised c2, sweep of anchor weight (dev) | weak anchors wreck c2 (λ 1, z 1: **21.7%** vs c2); λ 100–300: 51.6–52.5% (dev, best of 5) |
+| 3 | Chosen: s_z2_l100 (λ 100, z 2 pairs) | dev vs c2 52.5% [49.3, 55.8]; bank: 7.2% of buys changed, mean gain +0.0008; held-out pairs 5% taken (not generalising) |
+| 4 | Matched PPO A / B, seeds s1, s2, 100 iterations each | running |
 
 ## Optimizations measured
 
