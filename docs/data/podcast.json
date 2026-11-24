@@ -1,6 +1,32 @@
 {
  "episodes": [
   {
+   "n": 2,
+   "title": "Episode 02: Thirty two futures and the winner's curse",
+   "date": "Tue 24 Nov 2026, 13:53",
+   "minutes": 4.6,
+   "mp3": "../podcast/episode-02.mp3",
+   "notes": [
+    "One rollout is a coin flip: standard deviation about 0.5, so 32 rollouts give a standard error of about 9 points.",
+    "Pairing: every candidate is played on the same 32 deals; shared luck cancels in the difference.",
+    "The gate: override only when the paired gain exceeds 2 points and 2 standard errors (3.9% of buys in the ablation).",
+    "Winner's curse: the best of six equal noisy estimates looks about 1.27 standard errors too good; independent validation draws remove it.",
+    "Pilot: 20,120 graded buys, 389 verified improvements (1.9%); bank of 1,000 positions at 128-512 draws: c2 loses about 1.7 points per buy."
+   ],
+   "transcript": [
+    "The teacher in this project is a search. At a decision, it tries each candidate move, and plays the rest of the game to the end, many times. This episode is about the mathematics of that search. How noisy is it, how do we make it less noisy, and why does choosing the best of several noisy numbers fool you?",
+    "Start with one candidate, say buying a Gold. The teacher copies the game. It deals the cards it cannot see at random: the order of its own draw pile, and the opponent's hidden cards. Then our best network plays both sides to the end. A win counts one, a tie one half, a loss zero. That is one rollout. Do it thirty two times, with thirty two different deals, and average. That average estimates the chance of winning after buying Gold.",
+    "How precise is that estimate? A single rollout is a coin flip with some probability p. Its standard deviation is the square root of p times one minus p. Near p equals one half, that is one half. Averaging thirty two of them divides the spread by the square root of thirty two, which is about five point seven. So the standard error is about nine percentage points. That is a lot. Two candidates whose true values differ by five points would often swap places.",
+    "The first trick is pairing. The teacher plays every candidate on the same thirty two deals. Deal number seven is the same shuffle for Gold, for Laboratory, and for passing. Many deals decide the game almost on their own: a lucky draw wins whatever you bought. Those deals add the same amount to every candidate. When you subtract two candidates deal by deal, that shared luck cancels. The variance of a difference is the sum of the two variances minus twice their covariance. Pairing makes the covariance large, so the difference is much more precise than either value alone.",
+    "The second trick is the gate. The teacher only overrides our network when the paired gain is larger than two percentage points, and also larger than two standard errors of that paired difference. Two standard errors is roughly a ninety five percent one sided test. In the matched comparison this gate let the teacher change three point nine percent of buys.",
+    "Now the winner's curse. Suppose six candidates are truly equal. Each estimate has noise. If you pick the largest of six noisy numbers, you will almost always pick one whose noise happened to be positive. For six independent normal errors, the expected maximum is about one point two seven standard deviations above the truth. With a standard error of five points, the winner looks about six points better than it is, even when no candidate is better at all. The two standard error gate helps, but a teacher that trains on its own winners would still learn noise.",
+    "So every label now has a second, independent test. When the teacher's best candidate is not our network's own choice, it plays that winner and our network's choice again, on thirty two fresh deals it has never used. Only if the winner beats the network's choice there, by more than two points and two standard errors, is the label called verified. Because the fresh deals are independent of the selection, they carry no winner's curse.",
+    "What did the pilot give? The teacher graded twenty thousand one hundred and twenty buy decisions. That took four and a half million rollouts and forty seven minutes on seven workers. In thirty seven percent of positions, some candidate looked at least a little better than the network's choice. After verification, only three hundred and eighty nine survived. That is one point nine percent. With a looser test, at one standard error, there were one thousand four hundred and eighty nine.",
+    "Then a bank. One thousand held out positions, every legal buy graded again with one hundred and twenty eight fresh deals, and one hundred of them with five hundred and twelve. On the bank, our network loses about one point seven percentage points per buy against the best option. The teacher's shortlist of the top five buys loses less than one tenth of a point. And when the teacher would override, it is clearly right about four times as often as it is clearly wrong.",
+    "The picture is consistent. Our network is very good. Its mistakes are rare and small, and measuring them takes hundreds of games per position. Next episode: the matched experiment that tested which kind of search actually wins games."
+   ]
+  },
+  {
    "n": 1,
    "title": "Episode 01: A ratio that was wrong from the first step",
    "date": "Tue 24 Nov 2026, 13:48",

@@ -1,0 +1,5 @@
+["One rollout is a coin flip: standard deviation about 0.5, so 32 rollouts give a standard error of about 9 points.",
+ "Pairing: every candidate is played on the same 32 deals; shared luck cancels in the difference.",
+ "The gate: override only when the paired gain exceeds 2 points and 2 standard errors (3.9% of buys in the ablation).",
+ "Winner's curse: the best of six equal noisy estimates looks about 1.27 standard errors too good; independent validation draws remove it.",
+ "Pilot: 20,120 graded buys, 389 verified improvements (1.9%); bank of 1,000 positions at 128-512 draws: c2 loses about 1.7 points per buy."]
