@@ -1,0 +1,4807 @@
+{
+"name": "ablation",
+"games": [
+{
+"i": 0,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Chapel",
+"Council Room",
+"Harbinger",
+"Library",
+"Moat",
+"Throne Room",
+"Vassal",
+"Workshop"
+],
+"seed": 2976372232
+},
+{
+"i": 1,
+"kingdom": [
+"Bandit",
+"Chapel",
+"Council Room",
+"Laboratory",
+"Market",
+"Militia",
+"Mine",
+"Remodel",
+"Vassal",
+"Witch"
+],
+"seed": 3325773697
+},
+{
+"i": 2,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Gardens",
+"Library",
+"Merchant",
+"Mine",
+"Smithy",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 1556065314
+},
+{
+"i": 3,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Market",
+"Militia",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Smithy",
+"Workshop"
+],
+"seed": 3811540873
+},
+{
+"i": 4,
+"kingdom": [
+"Cellar",
+"Council Room",
+"Market",
+"Mine",
+"Moat",
+"Moneylender",
+"Sentry",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3821244618
+},
+{
+"i": 5,
+"kingdom": [
+"Artisan",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Mine",
+"Moat",
+"Moneylender",
+"Sentry",
+"Witch"
+],
+"seed": 3162091195
+},
+{
+"i": 6,
+"kingdom": [
+"Bandit",
+"Gardens",
+"Harbinger",
+"Militia",
+"Poacher",
+"Sentry",
+"Throne Room",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 2757812070
+},
+{
+"i": 7,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Gardens",
+"Library",
+"Market",
+"Sentry",
+"Smithy",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 2271312711
+},
+{
+"i": 8,
+"kingdom": [
+"Bandit",
+"Gardens",
+"Harbinger",
+"Militia",
+"Mine",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Vassal",
+"Workshop"
+],
+"seed": 1246184496
+},
+{
+"i": 9,
+"kingdom": [
+"Artisan",
+"Festival",
+"Gardens",
+"Laboratory",
+"Library",
+"Moat",
+"Poacher",
+"Sentry",
+"Throne Room",
+"Witch"
+],
+"seed": 459679341
+},
+{
+"i": 10,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Laboratory",
+"Merchant",
+"Mine",
+"Moat",
+"Poacher",
+"Vassal",
+"Village"
+],
+"seed": 448378846
+},
+{
+"i": 11,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Council Room",
+"Festival",
+"Library",
+"Militia",
+"Moneylender",
+"Smithy",
+"Witch"
+],
+"seed": 876249526
+},
+{
+"i": 12,
+"kingdom": [
+"Cellar",
+"Festival",
+"Gardens",
+"Laboratory",
+"Merchant",
+"Poacher",
+"Sentry",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 904692370
+},
+{
+"i": 13,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Merchant",
+"Moat",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 954220005
+},
+{
+"i": 14,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Gardens",
+"Harbinger",
+"Library",
+"Market",
+"Remodel",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 777173957
+},
+{
+"i": 15,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Harbinger",
+"Mine",
+"Moat",
+"Poacher",
+"Sentry",
+"Village"
+],
+"seed": 140034505
+},
+{
+"i": 16,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Library",
+"Merchant",
+"Militia",
+"Mine",
+"Smithy",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 648019464
+},
+{
+"i": 17,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Council Room",
+"Festival",
+"Market",
+"Remodel",
+"Smithy",
+"Village",
+"Workshop"
+],
+"seed": 3961111954
+},
+{
+"i": 18,
+"kingdom": [
+"Bandit",
+"Chapel",
+"Council Room",
+"Harbinger",
+"Merchant",
+"Mine",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Sentry"
+],
+"seed": 2470062984
+},
+{
+"i": 19,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Gardens",
+"Market",
+"Moneylender",
+"Remodel",
+"Smithy",
+"Village",
+"Workshop"
+],
+"seed": 839480843
+},
+{
+"i": 20,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Harbinger",
+"Library",
+"Merchant",
+"Militia",
+"Sentry",
+"Smithy",
+"Village"
+],
+"seed": 210932467
+},
+{
+"i": 21,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Gardens",
+"Library",
+"Market",
+"Militia",
+"Poacher",
+"Smithy",
+"Vassal"
+],
+"seed": 3859117952
+},
+{
+"i": 22,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Council Room",
+"Library",
+"Militia",
+"Mine",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Village"
+],
+"seed": 3031593157
+},
+{
+"i": 23,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Festival",
+"Merchant",
+"Militia",
+"Mine",
+"Moat",
+"Poacher",
+"Throne Room",
+"Vassal"
+],
+"seed": 1622446199
+},
+{
+"i": 24,
+"kingdom": [
+"Artisan",
+"Council Room",
+"Festival",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3996085679
+},
+{
+"i": 25,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Laboratory",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Vassal"
+],
+"seed": 2721087458
+},
+{
+"i": 26,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Merchant",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 3671124795
+},
+{
+"i": 27,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Harbinger",
+"Market",
+"Moat",
+"Remodel",
+"Sentry",
+"Smithy",
+"Witch"
+],
+"seed": 4233558096
+},
+{
+"i": 28,
+"kingdom": [
+"Chapel",
+"Harbinger",
+"Militia",
+"Mine",
+"Poacher",
+"Remodel",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3194123943
+},
+{
+"i": 29,
+"kingdom": [
+"Cellar",
+"Festival",
+"Gardens",
+"Laboratory",
+"Library",
+"Militia",
+"Moneylender",
+"Remodel",
+"Throne Room",
+"Witch"
+],
+"seed": 2378329786
+},
+{
+"i": 30,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Gardens",
+"Militia",
+"Mine",
+"Moat",
+"Remodel",
+"Sentry",
+"Witch",
+"Workshop"
+],
+"seed": 992159222
+},
+{
+"i": 31,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Library",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3731721579
+},
+{
+"i": 32,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Council Room",
+"Gardens",
+"Harbinger",
+"Merchant",
+"Mine",
+"Moneylender",
+"Sentry",
+"Smithy"
+],
+"seed": 919071131
+},
+{
+"i": 33,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Council Room",
+"Market",
+"Militia",
+"Mine",
+"Moat",
+"Remodel",
+"Village",
+"Workshop"
+],
+"seed": 3508543335
+},
+{
+"i": 34,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Militia",
+"Mine",
+"Poacher",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3047686527
+},
+{
+"i": 35,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Harbinger",
+"Laboratory",
+"Library",
+"Market",
+"Moat",
+"Remodel",
+"Vassal"
+],
+"seed": 421205986
+},
+{
+"i": 36,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Laboratory",
+"Library",
+"Moat",
+"Remodel",
+"Sentry",
+"Workshop"
+],
+"seed": 56674922
+},
+{
+"i": 37,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Gardens",
+"Library",
+"Moneylender",
+"Smithy",
+"Witch",
+"Workshop"
+],
+"seed": 534930217
+},
+{
+"i": 38,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Market",
+"Militia",
+"Sentry",
+"Smithy",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 4168740210
+},
+{
+"i": 39,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Market",
+"Merchant",
+"Poacher",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 834159575
+},
+{
+"i": 40,
+"kingdom": [
+"Chapel",
+"Gardens",
+"Harbinger",
+"Militia",
+"Moat",
+"Poacher",
+"Remodel",
+"Sentry",
+"Vassal",
+"Witch"
+],
+"seed": 615537867
+},
+{
+"i": 41,
+"kingdom": [
+"Artisan",
+"Festival",
+"Gardens",
+"Laboratory",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Workshop"
+],
+"seed": 4269390127
+},
+{
+"i": 42,
+"kingdom": [
+"Bureaucrat",
+"Festival",
+"Merchant",
+"Mine",
+"Moat",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 361690790
+},
+{
+"i": 43,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Gardens",
+"Harbinger",
+"Militia",
+"Moat",
+"Moneylender",
+"Throne Room",
+"Witch"
+],
+"seed": 1324874221
+},
+{
+"i": 44,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Council Room",
+"Festival",
+"Militia",
+"Mine",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 202745856
+},
+{
+"i": 45,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Library",
+"Militia",
+"Poacher",
+"Vassal"
+],
+"seed": 2542214655
+},
+{
+"i": 46,
+"kingdom": [
+"Chapel",
+"Council Room",
+"Harbinger",
+"Market",
+"Moneylender",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Workshop"
+],
+"seed": 3552787315
+},
+{
+"i": 47,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Harbinger",
+"Militia",
+"Mine",
+"Remodel",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 3996137277
+},
+{
+"i": 48,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Gardens",
+"Laboratory",
+"Militia",
+"Poacher",
+"Sentry",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 92312578
+},
+{
+"i": 49,
+"kingdom": [
+"Artisan",
+"Gardens",
+"Harbinger",
+"Market",
+"Militia",
+"Mine",
+"Moat",
+"Poacher",
+"Witch",
+"Workshop"
+],
+"seed": 3352365454
+},
+{
+"i": 50,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Laboratory",
+"Mine",
+"Moat",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Workshop"
+],
+"seed": 280270722
+},
+{
+"i": 51,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Council Room",
+"Market",
+"Moat",
+"Sentry",
+"Smithy",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 4032554702
+},
+{
+"i": 52,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Harbinger",
+"Laboratory",
+"Market",
+"Militia",
+"Mine",
+"Moneylender",
+"Poacher",
+"Smithy"
+],
+"seed": 2078471043
+},
+{
+"i": 53,
+"kingdom": [
+"Artisan",
+"Harbinger",
+"Library",
+"Market",
+"Merchant",
+"Poacher",
+"Sentry",
+"Smithy",
+"Vassal",
+"Village"
+],
+"seed": 2999361754
+},
+{
+"i": 54,
+"kingdom": [
+"Bureaucrat",
+"Laboratory",
+"Market",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 2173056765
+},
+{
+"i": 55,
+"kingdom": [
+"Council Room",
+"Festival",
+"Harbinger",
+"Market",
+"Militia",
+"Mine",
+"Moat",
+"Poacher",
+"Smithy",
+"Workshop"
+],
+"seed": 1611379565
+},
+{
+"i": 56,
+"kingdom": [
+"Artisan",
+"Council Room",
+"Festival",
+"Gardens",
+"Militia",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Witch",
+"Workshop"
+],
+"seed": 2510466813
+},
+{
+"i": 57,
+"kingdom": [
+"Bandit",
+"Chapel",
+"Gardens",
+"Laboratory",
+"Merchant",
+"Militia",
+"Mine",
+"Remodel",
+"Vassal",
+"Village"
+],
+"seed": 781505176
+},
+{
+"i": 58,
+"kingdom": [
+"Bureaucrat",
+"Laboratory",
+"Market",
+"Merchant",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 2725019336
+},
+{
+"i": 59,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Harbinger",
+"Merchant",
+"Militia",
+"Remodel",
+"Sentry",
+"Throne Room"
+],
+"seed": 499107143
+},
+{
+"i": 60,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Library",
+"Mine",
+"Moneylender",
+"Sentry",
+"Village"
+],
+"seed": 393814202
+},
+{
+"i": 61,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Festival",
+"Harbinger",
+"Market",
+"Mine",
+"Moat",
+"Smithy",
+"Village",
+"Workshop"
+],
+"seed": 3494880019
+},
+{
+"i": 62,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Gardens",
+"Harbinger",
+"Library",
+"Market",
+"Moneylender",
+"Witch",
+"Workshop"
+],
+"seed": 3026350934
+},
+{
+"i": 63,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Mine",
+"Remodel",
+"Sentry",
+"Village"
+],
+"seed": 2771724344
+},
+{
+"i": 64,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Cellar",
+"Council Room",
+"Mine",
+"Remodel",
+"Sentry",
+"Smithy",
+"Village",
+"Workshop"
+],
+"seed": 3643160925
+},
+{
+"i": 65,
+"kingdom": [
+"Cellar",
+"Council Room",
+"Harbinger",
+"Market",
+"Militia",
+"Poacher",
+"Remodel",
+"Smithy",
+"Vassal",
+"Village"
+],
+"seed": 2371000162
+},
+{
+"i": 66,
+"kingdom": [
+"Bandit",
+"Chapel",
+"Festival",
+"Gardens",
+"Library",
+"Merchant",
+"Moat",
+"Remodel",
+"Smithy",
+"Throne Room"
+],
+"seed": 6269101
+},
+{
+"i": 67,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Council Room",
+"Festival",
+"Laboratory",
+"Library",
+"Mine",
+"Poacher",
+"Smithy",
+"Throne Room"
+],
+"seed": 3061114396
+},
+{
+"i": 68,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Gardens",
+"Moat",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 3768781447
+},
+{
+"i": 69,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Market",
+"Sentry",
+"Throne Room",
+"Witch"
+],
+"seed": 320400102
+},
+{
+"i": 70,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Council Room",
+"Merchant",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 1351885348
+},
+{
+"i": 71,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Merchant",
+"Militia",
+"Poacher",
+"Remodel",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 2489609643
+},
+{
+"i": 72,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Gardens",
+"Library",
+"Mine",
+"Moat",
+"Moneylender",
+"Sentry",
+"Vassal",
+"Witch"
+],
+"seed": 814359129
+},
+{
+"i": 73,
+"kingdom": [
+"Bandit",
+"Gardens",
+"Harbinger",
+"Library",
+"Poacher",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 1180250814
+},
+{
+"i": 74,
+"kingdom": [
+"Bandit",
+"Council Room",
+"Gardens",
+"Laboratory",
+"Market",
+"Merchant",
+"Remodel",
+"Sentry",
+"Vassal",
+"Village"
+],
+"seed": 4057336906
+},
+{
+"i": 75,
+"kingdom": [
+"Cellar",
+"Gardens",
+"Laboratory",
+"Library",
+"Market",
+"Merchant",
+"Poacher",
+"Remodel",
+"Sentry",
+"Vassal"
+],
+"seed": 4198540108
+},
+{
+"i": 76,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Gardens",
+"Laboratory",
+"Merchant",
+"Militia",
+"Moneylender",
+"Sentry",
+"Smithy"
+],
+"seed": 1347080817
+},
+{
+"i": 77,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Workshop"
+],
+"seed": 3584302313
+},
+{
+"i": 78,
+"kingdom": [
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Merchant",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Sentry"
+],
+"seed": 1517167935
+},
+{
+"i": 79,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Gardens",
+"Library",
+"Merchant",
+"Militia",
+"Moneylender",
+"Sentry",
+"Workshop"
+],
+"seed": 246269173
+},
+{
+"i": 80,
+"kingdom": [
+"Harbinger",
+"Laboratory",
+"Market",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3958911354
+},
+{
+"i": 81,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Library",
+"Merchant",
+"Militia",
+"Mine",
+"Moneylender",
+"Remodel",
+"Vassal",
+"Witch"
+],
+"seed": 3890049889
+},
+{
+"i": 82,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Chapel",
+"Gardens",
+"Merchant",
+"Militia",
+"Remodel",
+"Sentry",
+"Smithy",
+"Throne Room"
+],
+"seed": 1333875981
+},
+{
+"i": 83,
+"kingdom": [
+"Bandit",
+"Council Room",
+"Festival",
+"Library",
+"Merchant",
+"Moat",
+"Remodel",
+"Smithy",
+"Vassal",
+"Workshop"
+],
+"seed": 2393032131
+},
+{
+"i": 84,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Council Room",
+"Merchant",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Vassal"
+],
+"seed": 4127091457
+},
+{
+"i": 85,
+"kingdom": [
+"Cellar",
+"Festival",
+"Library",
+"Market",
+"Militia",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Village",
+"Witch"
+],
+"seed": 2016890813
+},
+{
+"i": 86,
+"kingdom": [
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Library",
+"Moat",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Workshop"
+],
+"seed": 1855128636
+},
+{
+"i": 87,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Council Room",
+"Harbinger",
+"Merchant",
+"Poacher",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Village"
+],
+"seed": 1463651785
+},
+{
+"i": 88,
+"kingdom": [
+"Bureaucrat",
+"Festival",
+"Library",
+"Market",
+"Mine",
+"Moneylender",
+"Smithy",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 663373943
+},
+{
+"i": 89,
+"kingdom": [
+"Cellar",
+"Festival",
+"Gardens",
+"Market",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Smithy",
+"Vassal"
+],
+"seed": 1512559944
+},
+{
+"i": 90,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Gardens",
+"Library",
+"Market",
+"Mine",
+"Moat",
+"Poacher",
+"Smithy",
+"Witch"
+],
+"seed": 2422261351
+},
+{
+"i": 91,
+"kingdom": [
+"Cellar",
+"Council Room",
+"Harbinger",
+"Market",
+"Merchant",
+"Moat",
+"Remodel",
+"Sentry",
+"Smithy",
+"Vassal"
+],
+"seed": 3733769506
+},
+{
+"i": 92,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Library",
+"Merchant",
+"Mine",
+"Moat",
+"Poacher",
+"Vassal",
+"Witch"
+],
+"seed": 1109910030
+},
+{
+"i": 93,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Gardens",
+"Library",
+"Market",
+"Mine",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Throne Room"
+],
+"seed": 3001453924
+},
+{
+"i": 94,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Gardens",
+"Library",
+"Mine",
+"Poacher",
+"Smithy",
+"Vassal",
+"Witch"
+],
+"seed": 4275488417
+},
+{
+"i": 95,
+"kingdom": [
+"Bandit",
+"Council Room",
+"Festival",
+"Harbinger",
+"Market",
+"Merchant",
+"Mine",
+"Moat",
+"Moneylender",
+"Workshop"
+],
+"seed": 3906619900
+},
+{
+"i": 96,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Laboratory",
+"Merchant",
+"Militia",
+"Remodel",
+"Sentry",
+"Throne Room"
+],
+"seed": 3451590643
+},
+{
+"i": 97,
+"kingdom": [
+"Artisan",
+"Festival",
+"Harbinger",
+"Laboratory",
+"Militia",
+"Moat",
+"Poacher",
+"Sentry",
+"Throne Room",
+"Village"
+],
+"seed": 127071401
+},
+{
+"i": 98,
+"kingdom": [
+"Cellar",
+"Gardens",
+"Harbinger",
+"Merchant",
+"Militia",
+"Mine",
+"Moneylender",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 1195965533
+},
+{
+"i": 99,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Gardens",
+"Market",
+"Militia",
+"Moneylender",
+"Poacher",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 1629492194
+},
+{
+"i": 100,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Market",
+"Militia",
+"Moat",
+"Poacher",
+"Sentry",
+"Village"
+],
+"seed": 315891941
+},
+{
+"i": 101,
+"kingdom": [
+"Bandit",
+"Festival",
+"Gardens",
+"Merchant",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 505369786
+},
+{
+"i": 102,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Gardens",
+"Laboratory",
+"Market",
+"Merchant",
+"Sentry",
+"Vassal",
+"Village"
+],
+"seed": 1104788666
+},
+{
+"i": 103,
+"kingdom": [
+"Artisan",
+"Festival",
+"Gardens",
+"Market",
+"Militia",
+"Moat",
+"Moneylender",
+"Sentry",
+"Smithy",
+"Witch"
+],
+"seed": 1192489257
+},
+{
+"i": 104,
+"kingdom": [
+"Gardens",
+"Harbinger",
+"Library",
+"Market",
+"Militia",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 1646801842
+},
+{
+"i": 105,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Festival",
+"Market",
+"Merchant",
+"Moneylender",
+"Remodel",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 2931638853
+},
+{
+"i": 106,
+"kingdom": [
+"Artisan",
+"Library",
+"Market",
+"Mine",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3179604776
+},
+{
+"i": 107,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Harbinger",
+"Library",
+"Market",
+"Mine",
+"Sentry",
+"Village",
+"Workshop"
+],
+"seed": 3233097827
+},
+{
+"i": 108,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Chapel",
+"Gardens",
+"Market",
+"Militia",
+"Mine",
+"Moat",
+"Remodel",
+"Vassal"
+],
+"seed": 1411921247
+},
+{
+"i": 109,
+"kingdom": [
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Market",
+"Moat",
+"Sentry",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 1941706439
+},
+{
+"i": 110,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Market",
+"Remodel",
+"Smithy",
+"Throne Room"
+],
+"seed": 1178085618
+},
+{
+"i": 111,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Library",
+"Merchant",
+"Mine",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Throne Room"
+],
+"seed": 2271548056
+},
+{
+"i": 112,
+"kingdom": [
+"Chapel",
+"Festival",
+"Library",
+"Militia",
+"Moat",
+"Poacher",
+"Remodel",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 2068633287
+},
+{
+"i": 113,
+"kingdom": [
+"Bandit",
+"Gardens",
+"Harbinger",
+"Market",
+"Moat",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 2287601028
+},
+{
+"i": 114,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Militia",
+"Mine",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3821674416
+},
+{
+"i": 115,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Chapel",
+"Gardens",
+"Library",
+"Moat",
+"Poacher",
+"Remodel",
+"Throne Room"
+],
+"seed": 415703486
+},
+{
+"i": 116,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Laboratory",
+"Merchant",
+"Militia",
+"Mine",
+"Moat",
+"Remodel",
+"Vassal"
+],
+"seed": 1838245978
+},
+{
+"i": 117,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Festival",
+"Laboratory",
+"Merchant",
+"Mine",
+"Moneylender",
+"Poacher",
+"Village",
+"Witch"
+],
+"seed": 505497057
+},
+{
+"i": 118,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Market",
+"Militia",
+"Moneylender",
+"Poacher",
+"Sentry",
+"Village",
+"Workshop"
+],
+"seed": 3605141761
+},
+{
+"i": 119,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Laboratory",
+"Merchant",
+"Mine",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 1498482493
+},
+{
+"i": 120,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Gardens",
+"Market",
+"Mine",
+"Moat",
+"Sentry",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 2901687039
+},
+{
+"i": 121,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Harbinger",
+"Library",
+"Market",
+"Militia",
+"Moneylender",
+"Smithy",
+"Witch"
+],
+"seed": 1601723156
+},
+{
+"i": 122,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Laboratory",
+"Market",
+"Mine",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Throne Room",
+"Vassal"
+],
+"seed": 2214776078
+},
+{
+"i": 123,
+"kingdom": [
+"Artisan",
+"Festival",
+"Gardens",
+"Laboratory",
+"Market",
+"Militia",
+"Remodel",
+"Sentry",
+"Smithy",
+"Witch"
+],
+"seed": 2305637999
+},
+{
+"i": 124,
+"kingdom": [
+"Artisan",
+"Festival",
+"Laboratory",
+"Mine",
+"Moat",
+"Moneylender",
+"Poacher",
+"Sentry",
+"Village",
+"Witch"
+],
+"seed": 407219900
+},
+{
+"i": 125,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Laboratory",
+"Market",
+"Moneylender",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 2996548100
+},
+{
+"i": 126,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Laboratory",
+"Militia",
+"Moat",
+"Throne Room",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 3320249645
+},
+{
+"i": 127,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Harbinger",
+"Remodel",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 2181745560
+},
+{
+"i": 128,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Council Room",
+"Festival",
+"Harbinger",
+"Market",
+"Militia",
+"Moat",
+"Smithy",
+"Workshop"
+],
+"seed": 1274291550
+},
+{
+"i": 129,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Gardens",
+"Library",
+"Mine",
+"Moneylender",
+"Poacher",
+"Remodel"
+],
+"seed": 2877674702
+},
+{
+"i": 130,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Harbinger",
+"Laboratory",
+"Library",
+"Moneylender",
+"Remodel",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 3435231746
+},
+{
+"i": 131,
+"kingdom": [
+"Chapel",
+"Festival",
+"Library",
+"Merchant",
+"Mine",
+"Moat",
+"Moneylender",
+"Remodel",
+"Smithy",
+"Vassal"
+],
+"seed": 559183918
+},
+{
+"i": 132,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Gardens",
+"Merchant",
+"Militia",
+"Mine",
+"Moat",
+"Throne Room",
+"Witch"
+],
+"seed": 3488250489
+},
+{
+"i": 133,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Cellar",
+"Market",
+"Merchant",
+"Moneylender",
+"Smithy",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 1487514349
+},
+{
+"i": 134,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Laboratory",
+"Library",
+"Moat",
+"Moneylender",
+"Sentry",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 2516610894
+},
+{
+"i": 135,
+"kingdom": [
+"Bureaucrat",
+"Gardens",
+"Harbinger",
+"Market",
+"Merchant",
+"Mine",
+"Moat",
+"Remodel",
+"Vassal",
+"Village"
+],
+"seed": 3033623489
+},
+{
+"i": 136,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Library",
+"Market",
+"Poacher",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 1664587608
+},
+{
+"i": 137,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Festival",
+"Harbinger",
+"Poacher",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Village"
+],
+"seed": 3890853734
+},
+{
+"i": 138,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Library",
+"Militia",
+"Remodel",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village"
+],
+"seed": 3426177946
+},
+{
+"i": 139,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Market",
+"Militia",
+"Moat",
+"Smithy",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 328949107
+},
+{
+"i": 140,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Harbinger",
+"Merchant",
+"Moneylender",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 3952782578
+},
+{
+"i": 141,
+"kingdom": [
+"Artisan",
+"Harbinger",
+"Laboratory",
+"Mine",
+"Moat",
+"Poacher",
+"Throne Room",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 2781238662
+},
+{
+"i": 142,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Chapel",
+"Harbinger",
+"Library",
+"Mine",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Workshop"
+],
+"seed": 3411913349
+},
+{
+"i": 143,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Laboratory",
+"Library",
+"Market",
+"Moneylender",
+"Smithy",
+"Throne Room",
+"Village"
+],
+"seed": 703264046
+},
+{
+"i": 144,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Militia",
+"Moat",
+"Moneylender",
+"Remodel",
+"Smithy",
+"Witch"
+],
+"seed": 2894407282
+},
+{
+"i": 145,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Council Room",
+"Gardens",
+"Library",
+"Militia",
+"Poacher",
+"Remodel",
+"Witch"
+],
+"seed": 597798447
+},
+{
+"i": 146,
+"kingdom": [
+"Bandit",
+"Chapel",
+"Council Room",
+"Library",
+"Market",
+"Militia",
+"Mine",
+"Moneylender",
+"Sentry",
+"Witch"
+],
+"seed": 3290325897
+},
+{
+"i": 147,
+"kingdom": [
+"Bandit",
+"Festival",
+"Gardens",
+"Moat",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 1022797142
+},
+{
+"i": 148,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Library",
+"Mine",
+"Moat",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 3419258156
+},
+{
+"i": 149,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Chapel",
+"Council Room",
+"Gardens",
+"Militia",
+"Moat",
+"Remodel",
+"Vassal",
+"Village"
+],
+"seed": 3198136387
+},
+{
+"i": 150,
+"kingdom": [
+"Bandit",
+"Laboratory",
+"Moat",
+"Poacher",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 4060372832
+},
+{
+"i": 151,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Chapel",
+"Gardens",
+"Militia",
+"Moneylender",
+"Poacher",
+"Sentry",
+"Village",
+"Workshop"
+],
+"seed": 3470721454
+},
+{
+"i": 152,
+"kingdom": [
+"Cellar",
+"Council Room",
+"Gardens",
+"Merchant",
+"Militia",
+"Mine",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Village"
+],
+"seed": 306456355
+},
+{
+"i": 153,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Merchant",
+"Militia",
+"Moneylender",
+"Poacher",
+"Sentry",
+"Vassal"
+],
+"seed": 3334536151
+},
+{
+"i": 154,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Mine",
+"Moneylender",
+"Sentry",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 1749164674
+},
+{
+"i": 155,
+"kingdom": [
+"Cellar",
+"Festival",
+"Library",
+"Merchant",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Smithy",
+"Vassal",
+"Witch"
+],
+"seed": 1235126629
+},
+{
+"i": 156,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Gardens",
+"Library",
+"Moat",
+"Remodel",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 2682298611
+},
+{
+"i": 157,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Laboratory",
+"Merchant",
+"Militia",
+"Mine",
+"Moat",
+"Poacher",
+"Remodel",
+"Throne Room"
+],
+"seed": 1102878417
+},
+{
+"i": 158,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Festival",
+"Harbinger",
+"Library",
+"Merchant",
+"Militia",
+"Mine",
+"Remodel",
+"Workshop"
+],
+"seed": 3640577379
+},
+{
+"i": 159,
+"kingdom": [
+"Council Room",
+"Festival",
+"Merchant",
+"Militia",
+"Mine",
+"Poacher",
+"Remodel",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 2166377250
+},
+{
+"i": 160,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Merchant",
+"Militia",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 1852885747
+},
+{
+"i": 161,
+"kingdom": [
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Laboratory",
+"Mine",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 2577541318
+},
+{
+"i": 162,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Festival",
+"Laboratory",
+"Merchant",
+"Militia",
+"Mine",
+"Moat",
+"Village",
+"Witch"
+],
+"seed": 2256288772
+},
+{
+"i": 163,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Library",
+"Merchant",
+"Moneylender",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 3789448047
+},
+{
+"i": 164,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Laboratory",
+"Militia",
+"Mine",
+"Moneylender",
+"Throne Room",
+"Witch"
+],
+"seed": 1353675792
+},
+{
+"i": 165,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Poacher",
+"Remodel",
+"Workshop"
+],
+"seed": 4171708732
+},
+{
+"i": 166,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Harbinger",
+"Market",
+"Moneylender",
+"Poacher",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 3615537603
+},
+{
+"i": 167,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Council Room",
+"Laboratory",
+"Library",
+"Militia",
+"Moat",
+"Moneylender",
+"Smithy"
+],
+"seed": 666461105
+},
+{
+"i": 168,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Gardens",
+"Moat",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 2738897710
+},
+{
+"i": 169,
+"kingdom": [
+"Artisan",
+"Festival",
+"Harbinger",
+"Laboratory",
+"Merchant",
+"Moat",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Vassal"
+],
+"seed": 3608581804
+},
+{
+"i": 170,
+"kingdom": [
+"Chapel",
+"Gardens",
+"Harbinger",
+"Library",
+"Market",
+"Militia",
+"Mine",
+"Remodel",
+"Vassal",
+"Witch"
+],
+"seed": 1859401925
+},
+{
+"i": 171,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Harbinger",
+"Market",
+"Militia",
+"Moneylender",
+"Remodel",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 897373483
+},
+{
+"i": 172,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Council Room",
+"Gardens",
+"Laboratory",
+"Moat",
+"Poacher",
+"Sentry",
+"Throne Room"
+],
+"seed": 3346084873
+},
+{
+"i": 173,
+"kingdom": [
+"Chapel",
+"Harbinger",
+"Library",
+"Militia",
+"Mine",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Workshop"
+],
+"seed": 2319913881
+},
+{
+"i": 174,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Council Room",
+"Harbinger",
+"Library",
+"Moat",
+"Sentry",
+"Smithy",
+"Vassal",
+"Workshop"
+],
+"seed": 3278211214
+},
+{
+"i": 175,
+"kingdom": [
+"Bandit",
+"Harbinger",
+"Library",
+"Mine",
+"Moat",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 2941886102
+},
+{
+"i": 176,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Militia",
+"Remodel",
+"Village",
+"Workshop"
+],
+"seed": 3785013713
+},
+{
+"i": 177,
+"kingdom": [
+"Bureaucrat",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Moat",
+"Poacher",
+"Remodel",
+"Sentry",
+"Workshop"
+],
+"seed": 2928041307
+},
+{
+"i": 178,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Festival",
+"Merchant",
+"Poacher",
+"Remodel",
+"Sentry",
+"Village"
+],
+"seed": 1674828549
+},
+{
+"i": 179,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Merchant",
+"Militia",
+"Moneylender",
+"Poacher",
+"Witch"
+],
+"seed": 3388415216
+},
+{
+"i": 180,
+"kingdom": [
+"Festival",
+"Gardens",
+"Merchant",
+"Militia",
+"Mine",
+"Moat",
+"Poacher",
+"Sentry",
+"Smithy",
+"Village"
+],
+"seed": 3069406673
+},
+{
+"i": 181,
+"kingdom": [
+"Bandit",
+"Chapel",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Market",
+"Mine",
+"Poacher",
+"Remodel",
+"Vassal"
+],
+"seed": 3203746354
+},
+{
+"i": 182,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Library",
+"Militia",
+"Moneylender",
+"Smithy",
+"Village",
+"Witch"
+],
+"seed": 3803316983
+},
+{
+"i": 183,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Council Room",
+"Festival",
+"Market",
+"Militia",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village"
+],
+"seed": 1409065480
+},
+{
+"i": 184,
+"kingdom": [
+"Artisan",
+"Festival",
+"Library",
+"Merchant",
+"Mine",
+"Moat",
+"Poacher",
+"Smithy",
+"Vassal",
+"Workshop"
+],
+"seed": 1292691303
+},
+{
+"i": 185,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Merchant",
+"Mine",
+"Remodel",
+"Sentry",
+"Village",
+"Witch"
+],
+"seed": 1998960795
+},
+{
+"i": 186,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Chapel",
+"Council Room",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Merchant",
+"Workshop"
+],
+"seed": 362150675
+},
+{
+"i": 187,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Harbinger",
+"Militia",
+"Mine",
+"Poacher",
+"Sentry",
+"Smithy",
+"Vassal",
+"Workshop"
+],
+"seed": 2615319436
+},
+{
+"i": 188,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Council Room",
+"Gardens",
+"Market",
+"Militia",
+"Mine",
+"Moneylender",
+"Remodel"
+],
+"seed": 3998362981
+},
+{
+"i": 189,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Gardens",
+"Library",
+"Militia",
+"Mine",
+"Poacher",
+"Smithy",
+"Throne Room"
+],
+"seed": 1361723134
+},
+{
+"i": 190,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Festival",
+"Market",
+"Merchant",
+"Militia",
+"Poacher",
+"Remodel",
+"Sentry",
+"Workshop"
+],
+"seed": 1676291412
+},
+{
+"i": 191,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Gardens",
+"Laboratory",
+"Library",
+"Market",
+"Sentry",
+"Throne Room",
+"Village"
+],
+"seed": 895089138
+},
+{
+"i": 192,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Library",
+"Militia",
+"Poacher",
+"Smithy",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 1314973118
+},
+{
+"i": 193,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Market",
+"Merchant",
+"Militia",
+"Moat",
+"Moneylender",
+"Remodel",
+"Workshop"
+],
+"seed": 386495079
+},
+{
+"i": 194,
+"kingdom": [
+"Harbinger",
+"Laboratory",
+"Market",
+"Merchant",
+"Militia",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Smithy",
+"Workshop"
+],
+"seed": 882009302
+},
+{
+"i": 195,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Council Room",
+"Festival",
+"Laboratory",
+"Market",
+"Moat",
+"Poacher",
+"Sentry",
+"Witch"
+],
+"seed": 2400427515
+},
+{
+"i": 196,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Council Room",
+"Festival",
+"Militia",
+"Mine",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Workshop"
+],
+"seed": 3821288197
+},
+{
+"i": 197,
+"kingdom": [
+"Council Room",
+"Festival",
+"Harbinger",
+"Laboratory",
+"Market",
+"Poacher",
+"Sentry",
+"Smithy",
+"Witch",
+"Workshop"
+],
+"seed": 2384988631
+},
+{
+"i": 198,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Council Room",
+"Gardens",
+"Moat",
+"Poacher",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Village"
+],
+"seed": 4183040997
+},
+{
+"i": 199,
+"kingdom": [
+"Chapel",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Moat",
+"Remodel",
+"Smithy",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 742714836
+},
+{
+"i": 200,
+"kingdom": [
+"Bandit",
+"Festival",
+"Library",
+"Market",
+"Militia",
+"Mine",
+"Moneylender",
+"Smithy",
+"Vassal",
+"Village"
+],
+"seed": 2666977674
+},
+{
+"i": 201,
+"kingdom": [
+"Cellar",
+"Council Room",
+"Harbinger",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Sentry",
+"Smithy",
+"Witch"
+],
+"seed": 3086908474
+},
+{
+"i": 202,
+"kingdom": [
+"Chapel",
+"Gardens",
+"Market",
+"Merchant",
+"Militia",
+"Moat",
+"Moneylender",
+"Poacher",
+"Sentry",
+"Witch"
+],
+"seed": 3987515767
+},
+{
+"i": 203,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Laboratory",
+"Militia",
+"Mine",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 2314356509
+},
+{
+"i": 204,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Market",
+"Merchant",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Village"
+],
+"seed": 500906816
+},
+{
+"i": 205,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Mine",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 1357605886
+},
+{
+"i": 206,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Market",
+"Merchant",
+"Militia",
+"Mine",
+"Moneylender",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3562703547
+},
+{
+"i": 207,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Festival",
+"Gardens",
+"Merchant",
+"Militia",
+"Village",
+"Workshop"
+],
+"seed": 4155112129
+},
+{
+"i": 208,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Market",
+"Moat",
+"Poacher",
+"Sentry",
+"Vassal",
+"Witch"
+],
+"seed": 2220586250
+},
+{
+"i": 209,
+"kingdom": [
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Library",
+"Militia",
+"Remodel",
+"Smithy",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 4284317976
+},
+{
+"i": 210,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Market",
+"Moneylender",
+"Remodel",
+"Throne Room"
+],
+"seed": 1419633825
+},
+{
+"i": 211,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Market",
+"Merchant",
+"Moat",
+"Remodel",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 2934117172
+},
+{
+"i": 212,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Market",
+"Moat",
+"Vassal",
+"Witch"
+],
+"seed": 1561834219
+},
+{
+"i": 213,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Council Room",
+"Library",
+"Market",
+"Poacher",
+"Remodel",
+"Smithy",
+"Vassal",
+"Village"
+],
+"seed": 934028
+},
+{
+"i": 214,
+"kingdom": [
+"Artisan",
+"Council Room",
+"Gardens",
+"Library",
+"Market",
+"Militia",
+"Moat",
+"Sentry",
+"Smithy",
+"Village"
+],
+"seed": 2745785709
+},
+{
+"i": 215,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Chapel",
+"Festival",
+"Harbinger",
+"Militia",
+"Moat",
+"Poacher",
+"Vassal"
+],
+"seed": 3562566627
+},
+{
+"i": 216,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Harbinger",
+"Merchant",
+"Militia",
+"Moat",
+"Remodel",
+"Witch",
+"Workshop"
+],
+"seed": 3825646263
+},
+{
+"i": 217,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Laboratory",
+"Market",
+"Merchant",
+"Mine",
+"Moat",
+"Poacher",
+"Smithy",
+"Village"
+],
+"seed": 1604577866
+},
+{
+"i": 218,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Gardens",
+"Laboratory",
+"Militia",
+"Moat",
+"Remodel",
+"Throne Room",
+"Vassal",
+"Workshop"
+],
+"seed": 2966686159
+},
+{
+"i": 219,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Militia",
+"Moat",
+"Moneylender",
+"Sentry",
+"Smithy",
+"Witch",
+"Workshop"
+],
+"seed": 3020571956
+},
+{
+"i": 220,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Festival",
+"Moat",
+"Poacher",
+"Remodel",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Witch"
+],
+"seed": 472050383
+},
+{
+"i": 221,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Market",
+"Merchant",
+"Moneylender",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 2878460105
+},
+{
+"i": 222,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Gardens",
+"Harbinger",
+"Library",
+"Market",
+"Mine",
+"Sentry",
+"Vassal"
+],
+"seed": 2573895302
+},
+{
+"i": 223,
+"kingdom": [
+"Council Room",
+"Harbinger",
+"Laboratory",
+"Militia",
+"Moat",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Smithy",
+"Witch"
+],
+"seed": 2922483683
+},
+{
+"i": 224,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Market",
+"Merchant",
+"Mine",
+"Remodel",
+"Sentry",
+"Witch"
+],
+"seed": 3020483690
+},
+{
+"i": 225,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Harbinger",
+"Militia",
+"Mine",
+"Poacher",
+"Throne Room",
+"Witch"
+],
+"seed": 89088523
+},
+{
+"i": 226,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Library",
+"Merchant",
+"Poacher",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 3174692034
+},
+{
+"i": 227,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Laboratory",
+"Library",
+"Merchant",
+"Moat",
+"Poacher",
+"Sentry",
+"Smithy"
+],
+"seed": 1727914920
+},
+{
+"i": 228,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Festival",
+"Mine",
+"Moat",
+"Poacher",
+"Remodel",
+"Smithy",
+"Throne Room"
+],
+"seed": 1461052472
+},
+{
+"i": 229,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Council Room",
+"Gardens",
+"Harbinger",
+"Militia",
+"Remodel",
+"Sentry",
+"Smithy",
+"Throne Room"
+],
+"seed": 1490998096
+},
+{
+"i": 230,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Chapel",
+"Council Room",
+"Gardens",
+"Laboratory",
+"Library",
+"Market",
+"Sentry",
+"Workshop"
+],
+"seed": 2635760832
+},
+{
+"i": 231,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Harbinger",
+"Laboratory",
+"Merchant",
+"Mine",
+"Remodel",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 1577088303
+},
+{
+"i": 232,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Gardens",
+"Harbinger",
+"Library",
+"Merchant",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 954220128
+},
+{
+"i": 233,
+"kingdom": [
+"Artisan",
+"Council Room",
+"Festival",
+"Gardens",
+"Laboratory",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Witch"
+],
+"seed": 3976942095
+},
+{
+"i": 234,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Harbinger",
+"Militia",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Sentry"
+],
+"seed": 3851459690
+},
+{
+"i": 235,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Harbinger",
+"Laboratory",
+"Market",
+"Merchant",
+"Militia",
+"Mine",
+"Vassal",
+"Workshop"
+],
+"seed": 691709493
+},
+{
+"i": 236,
+"kingdom": [
+"Bandit",
+"Festival",
+"Laboratory",
+"Library",
+"Merchant",
+"Mine",
+"Moneylender",
+"Remodel",
+"Vassal",
+"Witch"
+],
+"seed": 1674594540
+},
+{
+"i": 237,
+"kingdom": [
+"Bureaucrat",
+"Festival",
+"Gardens",
+"Militia",
+"Poacher",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 2062413043
+},
+{
+"i": 238,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Laboratory",
+"Market",
+"Merchant",
+"Militia",
+"Moat",
+"Vassal",
+"Village"
+],
+"seed": 3135109728
+},
+{
+"i": 239,
+"kingdom": [
+"Chapel",
+"Festival",
+"Harbinger",
+"Library",
+"Moat",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Village",
+"Witch"
+],
+"seed": 3248006162
+},
+{
+"i": 240,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Laboratory",
+"Library",
+"Market",
+"Mine",
+"Poacher",
+"Remodel",
+"Smithy",
+"Witch"
+],
+"seed": 4088659742
+},
+{
+"i": 241,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Festival",
+"Gardens",
+"Harbinger",
+"Market",
+"Moat",
+"Moneylender",
+"Remodel",
+"Village"
+],
+"seed": 495012791
+},
+{
+"i": 242,
+"kingdom": [
+"Artisan",
+"Council Room",
+"Gardens",
+"Laboratory",
+"Militia",
+"Mine",
+"Sentry",
+"Smithy",
+"Vassal",
+"Witch"
+],
+"seed": 3646877008
+},
+{
+"i": 243,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Council Room",
+"Mine",
+"Poacher",
+"Remodel",
+"Smithy",
+"Vassal",
+"Village"
+],
+"seed": 2116637617
+},
+{
+"i": 244,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Harbinger",
+"Market",
+"Merchant",
+"Mine",
+"Remodel",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 992708284
+},
+{
+"i": 245,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Harbinger",
+"Merchant",
+"Moneylender",
+"Remodel",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 289423502
+},
+{
+"i": 246,
+"kingdom": [
+"Artisan",
+"Gardens",
+"Library",
+"Militia",
+"Mine",
+"Moat",
+"Sentry",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 539661400
+},
+{
+"i": 247,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Festival",
+"Mine",
+"Remodel",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3076639527
+},
+{
+"i": 248,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Gardens",
+"Library",
+"Merchant",
+"Mine",
+"Moneylender",
+"Sentry",
+"Smithy"
+],
+"seed": 1760070832
+},
+{
+"i": 249,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Festival",
+"Laboratory",
+"Market",
+"Moneylender",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Witch"
+],
+"seed": 2866758245
+},
+{
+"i": 250,
+"kingdom": [
+"Bureaucrat",
+"Council Room",
+"Gardens",
+"Market",
+"Militia",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Sentry",
+"Village"
+],
+"seed": 2395215875
+},
+{
+"i": 251,
+"kingdom": [
+"Cellar",
+"Gardens",
+"Militia",
+"Moat",
+"Moneylender",
+"Remodel",
+"Smithy",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 3988408114
+},
+{
+"i": 252,
+"kingdom": [
+"Bandit",
+"Council Room",
+"Festival",
+"Militia",
+"Poacher",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village"
+],
+"seed": 1466772731
+},
+{
+"i": 253,
+"kingdom": [
+"Cellar",
+"Council Room",
+"Gardens",
+"Library",
+"Merchant",
+"Moat",
+"Poacher",
+"Sentry",
+"Smithy",
+"Village"
+],
+"seed": 3168415680
+},
+{
+"i": 254,
+"kingdom": [
+"Bandit",
+"Council Room",
+"Harbinger",
+"Laboratory",
+"Library",
+"Market",
+"Merchant",
+"Moneylender",
+"Throne Room",
+"Witch"
+],
+"seed": 2637633915
+},
+{
+"i": 255,
+"kingdom": [
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Library",
+"Market",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Throne Room"
+],
+"seed": 1628171936
+},
+{
+"i": 256,
+"kingdom": [
+"Bandit",
+"Harbinger",
+"Library",
+"Market",
+"Moneylender",
+"Poacher",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3235196498
+},
+{
+"i": 257,
+"kingdom": [
+"Bandit",
+"Festival",
+"Laboratory",
+"Militia",
+"Mine",
+"Poacher",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Vassal"
+],
+"seed": 467098265
+},
+{
+"i": 258,
+"kingdom": [
+"Chapel",
+"Council Room",
+"Gardens",
+"Harbinger",
+"Library",
+"Militia",
+"Moneylender",
+"Vassal",
+"Witch",
+"Workshop"
+],
+"seed": 3485853613
+},
+{
+"i": 259,
+"kingdom": [
+"Cellar",
+"Harbinger",
+"Library",
+"Merchant",
+"Mine",
+"Poacher",
+"Sentry",
+"Smithy",
+"Vassal",
+"Witch"
+],
+"seed": 3628447900
+},
+{
+"i": 260,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Festival",
+"Harbinger",
+"Library",
+"Moneylender",
+"Smithy",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 88219691
+},
+{
+"i": 261,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Council Room",
+"Festival",
+"Harbinger",
+"Laboratory",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Witch"
+],
+"seed": 2973966445
+},
+{
+"i": 262,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Council Room",
+"Festival",
+"Harbinger",
+"Laboratory",
+"Moneylender",
+"Poacher",
+"Throne Room",
+"Village"
+],
+"seed": 4247662945
+},
+{
+"i": 263,
+"kingdom": [
+"Council Room",
+"Gardens",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Sentry",
+"Smithy",
+"Witch",
+"Workshop"
+],
+"seed": 439905199
+},
+{
+"i": 264,
+"kingdom": [
+"Laboratory",
+"Library",
+"Militia",
+"Moat",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3331768879
+},
+{
+"i": 265,
+"kingdom": [
+"Council Room",
+"Festival",
+"Gardens",
+"Merchant",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Smithy",
+"Village",
+"Workshop"
+],
+"seed": 3434795571
+},
+{
+"i": 266,
+"kingdom": [
+"Bureaucrat",
+"Chapel",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Poacher",
+"Remodel",
+"Sentry",
+"Witch"
+],
+"seed": 1268114505
+},
+{
+"i": 267,
+"kingdom": [
+"Chapel",
+"Gardens",
+"Harbinger",
+"Laboratory",
+"Market",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Vassal"
+],
+"seed": 2387149846
+},
+{
+"i": 268,
+"kingdom": [
+"Bureaucrat",
+"Festival",
+"Laboratory",
+"Merchant",
+"Militia",
+"Poacher",
+"Smithy",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 1738141026
+},
+{
+"i": 269,
+"kingdom": [
+"Bandit",
+"Cellar",
+"Council Room",
+"Library",
+"Militia",
+"Remodel",
+"Sentry",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 2519494152
+},
+{
+"i": 270,
+"kingdom": [
+"Artisan",
+"Chapel",
+"Harbinger",
+"Laboratory",
+"Militia",
+"Mine",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Witch"
+],
+"seed": 1962658752
+},
+{
+"i": 271,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Festival",
+"Market",
+"Moat",
+"Remodel",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 1641940105
+},
+{
+"i": 272,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Council Room",
+"Festival",
+"Gardens",
+"Remodel",
+"Village",
+"Witch"
+],
+"seed": 3915494489
+},
+{
+"i": 273,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Harbinger",
+"Library",
+"Market",
+"Merchant",
+"Sentry",
+"Throne Room",
+"Witch",
+"Workshop"
+],
+"seed": 1703808377
+},
+{
+"i": 274,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Gardens",
+"Harbinger",
+"Merchant",
+"Remodel",
+"Sentry",
+"Throne Room"
+],
+"seed": 1456113794
+},
+{
+"i": 275,
+"kingdom": [
+"Cellar",
+"Gardens",
+"Laboratory",
+"Library",
+"Militia",
+"Mine",
+"Moat",
+"Moneylender",
+"Poacher",
+"Throne Room"
+],
+"seed": 3605756517
+},
+{
+"i": 276,
+"kingdom": [
+"Bandit",
+"Festival",
+"Gardens",
+"Harbinger",
+"Library",
+"Militia",
+"Moat",
+"Throne Room",
+"Vassal",
+"Workshop"
+],
+"seed": 873444077
+},
+{
+"i": 277,
+"kingdom": [
+"Council Room",
+"Gardens",
+"Market",
+"Merchant",
+"Militia",
+"Moat",
+"Poacher",
+"Remodel",
+"Witch",
+"Workshop"
+],
+"seed": 4166580478
+},
+{
+"i": 278,
+"kingdom": [
+"Library",
+"Militia",
+"Mine",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 3603053043
+},
+{
+"i": 279,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Cellar",
+"Library",
+"Merchant",
+"Militia",
+"Poacher",
+"Sentry",
+"Smithy",
+"Throne Room"
+],
+"seed": 88185045
+},
+{
+"i": 280,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Cellar",
+"Laboratory",
+"Poacher",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village"
+],
+"seed": 2556219297
+},
+{
+"i": 281,
+"kingdom": [
+"Council Room",
+"Laboratory",
+"Library",
+"Market",
+"Merchant",
+"Militia",
+"Poacher",
+"Remodel",
+"Smithy",
+"Village"
+],
+"seed": 1122169598
+},
+{
+"i": 282,
+"kingdom": [
+"Bureaucrat",
+"Gardens",
+"Mine",
+"Moneylender",
+"Remodel",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 3402671246
+},
+{
+"i": 283,
+"kingdom": [
+"Bureaucrat",
+"Cellar",
+"Council Room",
+"Festival",
+"Gardens",
+"Library",
+"Mine",
+"Smithy",
+"Throne Room",
+"Vassal"
+],
+"seed": 1775991661
+},
+{
+"i": 284,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Council Room",
+"Moneylender",
+"Remodel",
+"Sentry",
+"Smithy",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 1740787141
+},
+{
+"i": 285,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Market",
+"Merchant",
+"Militia",
+"Poacher",
+"Sentry",
+"Witch",
+"Workshop"
+],
+"seed": 2134516428
+},
+{
+"i": 286,
+"kingdom": [
+"Chapel",
+"Festival",
+"Laboratory",
+"Market",
+"Merchant",
+"Militia",
+"Mine",
+"Village",
+"Witch",
+"Workshop"
+],
+"seed": 2362903029
+},
+{
+"i": 287,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Gardens",
+"Harbinger",
+"Library",
+"Market",
+"Mine",
+"Throne Room"
+],
+"seed": 3830451653
+},
+{
+"i": 288,
+"kingdom": [
+"Festival",
+"Merchant",
+"Mine",
+"Moat",
+"Moneylender",
+"Sentry",
+"Throne Room",
+"Vassal",
+"Village",
+"Workshop"
+],
+"seed": 3465630666
+},
+{
+"i": 289,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Chapel",
+"Festival",
+"Merchant",
+"Mine",
+"Moneylender",
+"Witch",
+"Workshop"
+],
+"seed": 463450080
+},
+{
+"i": 290,
+"kingdom": [
+"Artisan",
+"Festival",
+"Laboratory",
+"Library",
+"Market",
+"Mine",
+"Moat",
+"Poacher",
+"Vassal",
+"Witch"
+],
+"seed": 3618354487
+},
+{
+"i": 291,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Market",
+"Merchant",
+"Moneylender",
+"Throne Room",
+"Vassal"
+],
+"seed": 1293196521
+},
+{
+"i": 292,
+"kingdom": [
+"Artisan",
+"Bureaucrat",
+"Chapel",
+"Council Room",
+"Laboratory",
+"Library",
+"Market",
+"Militia",
+"Moat",
+"Vassal"
+],
+"seed": 1537374743
+},
+{
+"i": 293,
+"kingdom": [
+"Artisan",
+"Cellar",
+"Harbinger",
+"Library",
+"Market",
+"Militia",
+"Poacher",
+"Sentry",
+"Village",
+"Witch"
+],
+"seed": 4262819267
+},
+{
+"i": 294,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Cellar",
+"Chapel",
+"Festival",
+"Gardens",
+"Poacher",
+"Smithy",
+"Witch"
+],
+"seed": 3064505428
+},
+{
+"i": 295,
+"kingdom": [
+"Artisan",
+"Library",
+"Market",
+"Militia",
+"Mine",
+"Sentry",
+"Throne Room",
+"Vassal",
+"Village",
+"Witch"
+],
+"seed": 3475419163
+},
+{
+"i": 296,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Bureaucrat",
+"Festival",
+"Merchant",
+"Moneylender",
+"Remodel",
+"Throne Room",
+"Vassal",
+"Witch"
+],
+"seed": 757193990
+},
+{
+"i": 297,
+"kingdom": [
+"Artisan",
+"Bandit",
+"Harbinger",
+"Laboratory",
+"Library",
+"Merchant",
+"Moat",
+"Moneylender",
+"Sentry",
+"Vassal"
+],
+"seed": 1090233852
+},
+{
+"i": 298,
+"kingdom": [
+"Bandit",
+"Bureaucrat",
+"Harbinger",
+"Library",
+"Merchant",
+"Moat",
+"Poacher",
+"Throne Room",
+"Village",
+"Workshop"
+],
+"seed": 1342463673
+},
+{
+"i": 299,
+"kingdom": [
+"Cellar",
+"Chapel",
+"Council Room",
+"Laboratory",
+"Library",
+"Militia",
+"Poacher",
+"Sentry",
+"Smithy",
+"Witch"
+],
+"seed": 3744896869
+}
+],
+"note": "300 fresh kingdoms, both seats each; sg-v1 manifests.py",
+"sha": "23c730cbe2cfc66c"
+}
