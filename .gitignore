@@ -6,3 +6,4 @@ __pycache__/
 publish_loop.pid
 .venv
 /runs/[AB]*
+podcast/publish_*.log
