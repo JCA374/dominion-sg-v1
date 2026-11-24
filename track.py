@@ -123,6 +123,13 @@ def events():
         ev.append({"t": mtime_t(plan), "kind": "stage_start", "stage": STEPS[3]["name"], "expect": STEPS[3]["expect"]})
     for p in sorted(glob.glob(os.path.join(RESULTS, "goal_*.json"))):
         pass                                          # goal checks are read by publish.py itself
+    mx = os.path.join(RESULTS, "matrix.json")
+    if os.path.exists(mx):                       # the best check: best of the four runs on the 500-kingdom matrix
+        m = json.load(open(mx))
+        k, v = max(((k, v) for k, v in m.items() if k.endswith(" vs c2") and k[0] in "AB"), key=lambda kv: kv[1]["score"])
+        ev.append({"t": mtime_t(mx), "kind": "goal_best", "stage": STEPS[3]["name"],
+                   "check": {"score": v["score"], "n": 2 * v["pairs"], "ci": v["ci95"],
+                             "label": f"{k.split(' vs')[0]} vs frozen c2, 500-kingdom matrix (best of 4 runs)"}})
     fin = os.path.join(RESULTS, "decision.json")
     if os.path.exists(fin):
         r = json.load(open(fin))
@@ -161,7 +168,21 @@ def progress_row():
     return row
 
 
+def goal_files():
+    """results/goal_promo_<branch>.json from the promotion match: the site's verified goal checks."""
+    p = os.path.join(RESULTS, "decision.json")
+    if not os.path.exists(p):
+        return
+    d = json.load(open(p))
+    for b, x in d["branches"].items():
+        g = {"t": mtime_t(p), "n": 4000, "score": x["vs_c2"]["score"], "value": x["vs_c2"]["score"], "ci": x["vs_c2"]["ci95"],
+             "label": f"branch {b} ({x['run']}, iteration {d['iteration']}) vs frozen c2, 2,000 fresh kingdoms x 2 seats",
+             "note": ("promoted" if x["promoted"] else "not promoted: the gate is 53% with the lower bound above 50%")}
+        json.dump(g, open(os.path.join(RESULTS, f"goal_promo_{b}.json"), "w"), indent=1)
+
+
 def update():
+    goal_files()
     os.makedirs(D, exist_ok=True)
     json.dump({"note": "The handoff's run order: ablation -> pilot labels -> supervised c2 -> matched PPO (A vs B).",
                "stages": [{**s, "reward": "match score: win 1, tie 1/2, loss 0", "cap": "none"} for s in STEPS]},

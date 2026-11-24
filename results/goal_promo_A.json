@@ -1,0 +1,12 @@
+{
+ "t": "2026-11-24T17:39:13",
+ "n": 4000,
+ "score": 0.514,
+ "value": 0.514,
+ "ci": [
+  0.5004,
+  0.528
+ ],
+ "label": "branch A (A_s2, iteration 100) vs frozen c2, 2,000 fresh kingdoms x 2 seats",
+ "note": "not promoted: the gate is 53% with the lower bound above 50%"
+}
