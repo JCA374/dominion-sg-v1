@@ -1,0 +1,5 @@
+["PPO multiplies each lesson by a ratio of new to old probability and clips it to between 0.8 and 1.2.",
+ "The C sampler divided logits by the temperature; the PyTorch update did not: at temperature 0.7 the first ratio was off by about 5% and 3.6% of decisions were already clipped.",
+ "Invisible at temperature 1, the setting all earlier runs used.",
+ "Fixed in one line; a step-zero check now measures the error (about 3e-7) before every run.",
+ "Also fixed: errored and overflowed games give no records; seeds instead of run names; two runs with one seed give identical weights."]
