@@ -17,12 +17,12 @@
 "score": 0.56
 },
 "action": {
-"pairs": 198,
-"score": 0.5643939393939394
+"pairs": 300,
+"score": 0.5508333333333333
 },
 "both": {
-"pairs": 0,
-"score": null
+"pairs": 9,
+"score": 0.6111111111111112
 }
 }
 }
