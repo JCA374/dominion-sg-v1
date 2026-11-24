@@ -60,7 +60,12 @@ Live table; `results/` has the files.
 
 | Step | Measurement | Result |
 |---|---|---|
-| 1 | Matched teacher ablation (300 fresh kingdoms × 2 seats, one frozen build) | running |
+| 1 | Ablation: plain c2 mirror vs c2 (600 games) | 50.0% [50.0, 50.0] |
+| 1 | Ablation: buy teacher on c2 vs c2 (600 games; 3.9% of buys overridden; latency p50 0.78 s, p95 2.56 s) | **56.0%** [53.0, 59.0] |
+| 1 | Ablation: action teacher on c2 vs c2 (600 games; 1.9% of actions overridden; p50 0.40 s, p95 1.13 s) | **55.1%** [52.4, 57.9] |
+| 1 | Ablation: both on c2 vs c2 (600 games; p50 0.47 s, p95 1.86 s) | **58.8%** [55.6, 62.1] |
+| 1 | Paired: both − buy / both − action / action − buy (300 kingdom pairs) | +2.8 [−1.2, +6.7] / +3.8 [−0.4, +7.8] / −0.9 [−4.9, +3.2] points |
+| 2 | Pilot labels: buy-only (the simplest arm that reproduces a gain), 20,000 positions, 32 validation draws | collecting |
 
 ## Optimizations measured
 
