@@ -1659,13 +1659,13 @@
 "cpu_hours": "6.2015"
 },
 "A_s2": {
-"iter": "97",
-"eval_vs_c2": "0.5675",
-"eval_vs_c1": "0.4975",
-"eval_GA_base": "0.9075",
-"eval_champion": "0.7275",
-"games_total": "291000",
-"cpu_hours": "6.1072"
+"iter": "100",
+"eval_vs_c2": "0.52",
+"eval_vs_c1": "0.5",
+"eval_GA_base": "0.8888",
+"eval_champion": "0.715",
+"games_total": "300000",
+"cpu_hours": "6.2899"
 },
 "B_s1": {
 "iter": "100",
@@ -1675,6 +1675,15 @@
 "eval_champion": "0.7275",
 "games_total": "300000",
 "cpu_hours": "6.1461"
+},
+"B_s2": {
+"iter": "17",
+"eval_vs_c2": "0.4575",
+"eval_vs_c1": "0.455",
+"eval_GA_base": "0.9025",
+"eval_champion": "0.6975",
+"games_total": "51000",
+"cpu_hours": "1.1104"
 }
 },
 "ablation_live": {
