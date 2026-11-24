@@ -7,3 +7,4 @@
 {"t": "2026-11-24T10:28:40", "kind": "note", "title": "Ablation: paired differences", "text": "buy - mirror +6.0 points [+3.0, +9.0]; action - mirror +5.1 points [+2.3, +7.8]; both - mirror +8.8 points [+5.6, +12.1]; both - buy +2.8 points [-1.2, +6.7]; both - action +3.8 points [-0.4, +7.8]; action - buy -0.9 points [-4.9, +3.2]"}
 {"t": "2026-11-24T10:28:40", "kind": "stage_pass", "stage": "1 Teacher ablation", "check": {"score": 0.5883, "n": 600, "label": "c2 + buy and action teacher vs c2"}}
 {"t": "2026-11-24T10:28:40", "kind": "stage_start", "stage": "2 Pilot dataset", "expect": "a few percent of positions are verified improvements; most survive the public view"}
+{"t": "2026-11-24T11:15:49", "kind": "note", "title": "Pilot labels collected", "text": "{\"run\": \"sg_pilot\", \"cohort\": \"a2c4633f925d\", \"shards\": 42, \"act\": 0, \"kinds\": \"buy\"}"}

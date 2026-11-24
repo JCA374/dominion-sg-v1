@@ -1,0 +1,7 @@
+{
+ "run": "sg_pilot",
+ "cohort": "a2c4633f925d",
+ "shards": 42,
+ "act": 0,
+ "kinds": "buy"
+}
