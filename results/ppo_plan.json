@@ -1,0 +1,36 @@
+{
+ "plan": [
+  [
+   "A_s1",
+   "/home/jonas/code/games/dominion/trainers/sg-v1/rl-v3/opponents/rl3_c2_2654.npy",
+   "s1"
+  ],
+  [
+   "B_s1",
+   "models/s_z2_l100/net.npy",
+   "s1"
+  ],
+  [
+   "A_s2",
+   "/home/jonas/code/games/dominion/trainers/sg-v1/rl-v3/opponents/rl3_c2_2654.npy",
+   "s2"
+  ],
+  [
+   "B_s2",
+   "models/s_z2_l100/net.npy",
+   "s2"
+  ]
+ ],
+ "iterations": 100,
+ "common": [
+  "drill_share=0.3",
+  "lr=0.0002",
+  "temp=1.0",
+  "frozen=c2:0.1,c1:0.1",
+  "eval_vs=c2,c1",
+  "exclude=/home/jonas/code/games/dominion/trainers/sg-v1/manifests/exclusions.json",
+  "goal_every=0",
+  "games=3000",
+  "chunk=50"
+ ]
+}
