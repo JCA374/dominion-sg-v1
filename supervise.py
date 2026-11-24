@@ -81,7 +81,8 @@ def main():
     sel = keep_kind[idx]
     idx, win, gain = idx[sel], win[sel], gain[sel]
     tr = D["SPLIT"][idx] == 2
-    te = D["SPLIT"][idx] == 1
+    dv = D["SPLIT"][idx] == 0                               # dev kingdoms: for choosing settings
+    te = D["SPLIT"][idx] == 1                               # test kingdoms (also the bank's): the held-out report
     A = dict(np.load(os.path.join(ROOT, "data", f"anchors_{a.anchors}.npz")))
     a_tr, a_te = np.where(A["SPLIT"] == 0)[0], np.where(A["SPLIT"] == 1)[0]
     c2 = from_flat(np.load(C2)).eval()
@@ -133,7 +134,7 @@ def main():
         out["value_abs_drift"] = round(float(dv.mean()), 5)
         return out
 
-    log = {"args": vars(a), "verified": {"train": int(tr.sum()), "test": int(te.sum()),
+    log = {"args": vars(a), "verified": {"train": int(tr.sum()), "dev": int(dv.sum()), "test": int(te.sum()),
                                           "by_kind": {KIND_NAMES[k]: int((D["KIND"][idx] == k).sum()) for k in (0, 1)},
                                           "label_rows": int(len(D["K"])),
                                           "mean_gain": round(float(gain.mean()), 4) if len(gain) else None},
@@ -141,8 +142,9 @@ def main():
     print(json.dumps(log["verified"]), flush=True)
     rng = np.random.default_rng(a.seed)
     trm = torch.from_numpy(tr)
+    dvm = torch.from_numpy(dv)
     tem = torch.from_numpy(te)
-    log["epochs"].append({"epoch": 0, "train": pair_stats(trm), "test": pair_stats(tem),
+    log["epochs"].append({"epoch": 0, "train": pair_stats(trm), "dev": pair_stats(dvm), "test": pair_stats(tem),
                           "anchor_test": anchor_stats(a_te)})
     t0 = time.time()
     tr_rows = np.where(tr)[0]
@@ -165,10 +167,11 @@ def main():
             torch.nn.utils.clip_grad_norm_(net.parameters(), 1.0)
             opt.step()
         net.eval()
-        e = {"epoch": ep, "train": pair_stats(trm), "test": pair_stats(tem), "anchor_test": anchor_stats(a_te),
+        e = {"epoch": ep, "train": pair_stats(trm), "dev": pair_stats(dvm), "test": pair_stats(tem),
+             "anchor_test": anchor_stats(a_te),
              "secs": round(time.time() - t0)}
         log["epochs"].append(e)
-        print(json.dumps({k: e[k] for k in ("epoch", "train", "test")}), "anchor KL",
+        print(json.dumps({k: e[k] for k in ("epoch", "train", "dev")}), "anchor KL",
               e["anchor_test"]["all"]["kl"], "agree", e["anchor_test"]["all"]["argmax_agree"], flush=True)
     out = os.path.join(ROOT, "models", a.name)
     os.makedirs(out, exist_ok=True)
