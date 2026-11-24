@@ -24,4 +24,5 @@
 {"t": "2026-11-24T11:38:54", "kind": "note", "title": "Supervised c2: s_z2_l100_e50", "text": "verified pairs {'train': 305, 'dev': 45, 'test': 39, 'by_kind': {'action': 0, 'buy': 389}, 'label_rows': 20120, 'mean_gain': 0.2649}; held-out pair accuracy {'n': 39, 'pair_acc': 0.0513, 'takes_winner': 0.0513, 'weighted_pair_acc': 0.046}; anchor drift {'n': 8528, 'kl': 0.009, 'argmax_agree': 0.9736}"}
 {"t": "2026-11-24T14:29:22", "kind": "stage_pass", "stage": "3 Supervised c2"}
 {"t": "2026-11-24T14:29:22", "kind": "stage_start", "stage": "4 Matched PPO", "expect": "B starts ahead of A; the question is whether it stays ahead after the same PPO"}
+{"t": "2026-11-24T17:26:15", "kind": "goal_best", "stage": "4 Matched PPO", "check": {"score": 0.546, "n": 1000, "ci": [0.519, 0.572], "label": "B_s2 vs frozen c2, 500-kingdom matrix (best of 4 runs)"}}
 {"t": "2026-11-24T17:39:13", "kind": "note", "stage": "4 Matched PPO", "title": "Decision", "text": "Promotion (2,000 fresh kingdoms x 2 seats) vs frozen c2: A (A_s2) 51.4% [50.0, 52.8], B (B_s2) 49.9% [48.6, 51.2]. B vs A head to head (matrix): s1 53.8%, s2 51.2%. Promoted: none. B consistently better than A: False."}
