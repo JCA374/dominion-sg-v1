@@ -1,5 +1,7 @@
 # Resume
 
+**Status 2026-11-24: finished.** All steps ran; nothing was promoted (results/decision.json). Units left running: sg-publish (the site).
+
 Every step resumes where it stopped; run each as a systemd user unit (see CLAUDE.md), `<py>` = rl-v3's venv python.
 
 | Step | Unit | Resume | Done when |

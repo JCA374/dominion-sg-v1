@@ -12,6 +12,16 @@ stronger model than PPO alone from the same start? This trainer carries out the 
 - **Promotion gate:** a fresh 2,000-kingdom both-seat match against frozen c2, ≥ 53% with the paired 95% lower bound
   above 50%, no regression against GA2 and none on the card slices.
 
+## Outcome (2026-11-24)
+
+**Nothing promoted; the search-guided branch did not consistently beat PPO alone.** Promotion on 2,000 fresh kingdoms
+against frozen c2: A 51.4% [50.0, 52.8], B 49.9% [48.6, 51.2] (gate 53%). Head to head B vs A: 53.8% [51.2, 56.5] on
+seed s1, 51.2% [48.5, 54.0] on s2. The teacher itself is strong (buy search +6 points, both +8.8 against plain c2),
+but a one-off supervised nudge from 389 verified lessons (of 20,120 labels) did not generalise (5% of held-out pairs)
+and did not survive 100 PPO iterations. Details: Results tab, `results/decision.json`, the divergence report
+(`docs/reports/divergence_B_s2.html`), podcast episodes 1–6. What to try next: tens of thousands of verified lessons,
+or search targets that keep correcting the net during PPO.
+
 ## Layout
 
 The trainers are pinned submodules; nothing of theirs is copied here.
