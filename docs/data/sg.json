@@ -1650,13 +1650,13 @@
 },
 "ppo": {
 "A_s1": {
-"iter": "7",
-"eval_vs_c2": "0.51",
-"eval_vs_c1": "0.47",
-"eval_GA_base": "0.9",
-"eval_champion": "0.6925",
-"games_total": "21000",
-"cpu_hours": "0.4702"
+"iter": "28",
+"eval_vs_c2": "0.5075",
+"eval_vs_c1": "0.535",
+"eval_GA_base": "0.9125",
+"eval_champion": "0.715",
+"games_total": "84000",
+"cpu_hours": "1.7681"
 }
 },
 "ablation_live": {
