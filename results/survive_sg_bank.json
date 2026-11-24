@@ -1,0 +1,45 @@
+{
+ "bank": "sg_bank",
+ "k": 64,
+ "margin": 0.02,
+ "overrides": 31,
+ "positions": 1000,
+ "bank_gain": {
+  "mean": 0.1081,
+  "survive": 0.7419
+ },
+ "views": {
+  "simulator": {
+   "n": 31,
+   "mean_gain": 0.0751,
+   "survive": 0.5161,
+   "positive": 0.6774
+  },
+  "public": {
+   "n": 31,
+   "mean_gain": 0.1038,
+   "survive": 0.6129,
+   "positive": 0.7097
+  },
+  "mixture": {
+   "n": 31,
+   "mean_gain": 0.0716,
+   "survive": 0.6129,
+   "positive": 0.6774
+  },
+  "public+mixture": {
+   "n": 31,
+   "mean_gain": 0.091,
+   "survive": 0.7097,
+   "positive": 0.7419
+  }
+ },
+ "by_kind": {
+  "buy": {
+   "simulator": 0.5161,
+   "public": 0.6129,
+   "mixture": 0.6129,
+   "public+mixture": 0.7097
+  }
+ }
+}

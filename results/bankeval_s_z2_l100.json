@@ -1,0 +1,54 @@
+{
+ "net": "models/s_z2_l100/net.npy",
+ "bank": "sg_bank",
+ "all": {
+  "n": 1000,
+  "changed": 0.072,
+  "mean_gain": 0.0008,
+  "harmful": 0.012,
+  "good": 0.019,
+  "agrees_with_best": 0.33,
+  "c2_agrees_with_best": 0.322
+ },
+ "by_kind": {
+  "buy": {
+   "n": 1000,
+   "changed": 0.072,
+   "mean_gain": 0.0008,
+   "harmful": 0.012,
+   "good": 0.019,
+   "agrees_with_best": 0.33,
+   "c2_agrees_with_best": 0.322
+  },
+  "action": null
+ },
+ "by_phase": {
+  "opening": {
+   "n": 131,
+   "changed": 0.0534,
+   "mean_gain": 0.00255,
+   "harmful": 0.0153,
+   "good": 0.0382,
+   "agrees_with_best": 0.4885,
+   "c2_agrees_with_best": 0.4656
+  },
+  "middle": {
+   "n": 378,
+   "changed": 0.0847,
+   "mean_gain": 0.0016,
+   "harmful": 0.0132,
+   "good": 0.0344,
+   "agrees_with_best": 0.3677,
+   "c2_agrees_with_best": 0.3492
+  },
+  "late": {
+   "n": 491,
+   "changed": 0.0672,
+   "mean_gain": -0.00027,
+   "harmful": 0.0102,
+   "good": 0.002,
+   "agrees_with_best": 0.2587,
+   "c2_agrees_with_best": 0.2627
+  }
+ }
+}

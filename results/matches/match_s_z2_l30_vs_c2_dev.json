@@ -1,0 +1,91 @@
+{
+ "name": "s_z2_l30_vs_c2_dev",
+ "args": {
+  "name": "s_z2_l30_vs_c2_dev",
+  "base": "net:/home/jonas/code/games/dominion/trainers/sg-v1/models/s_z2_l30/net.npy",
+  "bv": 0,
+  "opp": "c2",
+  "k0": 16,
+  "k1": 64,
+  "se": 1.5,
+  "topn": 5,
+  "margin": 0.0,
+  "student": "",
+  "z": 0.0,
+  "act": 0,
+  "resume": true,
+  "stream": "gate",
+  "games": "/home/jonas/code/games/dominion/trainers/sg-v1/manifests/dev.json",
+  "obs": 0,
+  "kval": 0,
+  "kingdoms": 300,
+  "workers": 7
+ },
+ "manifest": {
+  "name": "s_z2_l30_vs_c2_dev",
+  "base": "net:/home/jonas/code/games/dominion/trainers/sg-v1/models/s_z2_l30/net.npy",
+  "bv": 0,
+  "opp": "c2",
+  "k0": 16,
+  "k1": 64,
+  "se": 1.5,
+  "topn": 5,
+  "margin": 0.0,
+  "student": "",
+  "z": 0.0,
+  "act": 0,
+  "stream": "gate",
+  "games": "/home/jonas/code/games/dominion/trainers/sg-v1/manifests/dev.json",
+  "obs": 0,
+  "kval": 0,
+  "kingdoms": 300,
+  "models": {
+   "rl3_c2_2654.npy": "0018fb85b6cc87ec",
+   "rl3_c1_2300.npy": "daae8a0049b13346",
+   "rl1_r2_2200.npy": "47ed00b6f7cfa628"
+  },
+  "seat_sha": {
+   "base": "6e4169b033148da6",
+   "opp": "0018fb85b6cc87ec"
+  },
+  "student_sha": null,
+  "sources": {
+   "bv.c": "d123a77959f9f1c7",
+   "fastnet.h": "9c4705a216f60a3e",
+   "rl.c": "7d9a173697fef5ba",
+   "az.c": "1777b8ee4dcbb079",
+   "engine.c": "d303219f698b27c1",
+   "engine.h": "946bbed5cf1e4a89",
+   "engine_commit": "060e84430d5f9d79f22f36c281b7bdeccfd5b4bb"
+  },
+  "library": {
+   "path": "bv.so",
+   "sha": "f8cad6d01bbb6726"
+  },
+  "games_sha": "a8288092fe17e522"
+ },
+ "t": "2026-11-24 11:37",
+ "done": true,
+ "wall_secs": 3,
+ "latency_s": null,
+ "action_overrides": null,
+ "games": 600,
+ "score": 0.5,
+ "ci95": [
+  0.4667,
+  0.5325
+ ],
+ "override_rate": 0.0,
+ "secs_per_game": 0.03,
+ "rollouts": 0,
+ "capped": 1,
+ "errors": 0,
+ "pairs": 300,
+ "unpaired_games": 0,
+ "buy_overrides": 0,
+ "buys": 0,
+ "act_graded": 0,
+ "act_overrides": 0,
+ "act_override_rate": 0.0,
+ "score_uncapped_pairs": 0.4983
+}
