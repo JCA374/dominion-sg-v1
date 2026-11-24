@@ -1,0 +1,5 @@
+["Promotion (2,000 fresh kingdoms x 2 seats) vs frozen c2: A 51.4% [50.0, 52.8], B 49.9% [48.6, 51.2]; gate 53%: nothing promoted.",
+ "Winner's curse in action: B_s2 led the 500-kingdom matrix with 54.6% and fell to 49.9% on fresh kingdoms.",
+ "Head to head B vs A: seed 1 53.8% [51.2, 56.5], seed 2 51.2% [48.5, 54.0]: not consistent.",
+ "No regression vs GA2 (both 86-87%) or on any card slice.",
+ "B and A disagree on 16% of decisions; on the bank B's differing buys are worth +0.26 points: a wash."]
