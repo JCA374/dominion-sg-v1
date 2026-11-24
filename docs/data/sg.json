@@ -1,5 +1,178 @@
 {
-"ablation": null,
+"ablation": {
+"arms": {
+"mirror": {
+"pairs": 300,
+"games": 600,
+"score": 0.5,
+"ci95": [
+0.5,
+0.5
+],
+"capped_games": 2,
+"errored_games": 0,
+"score_without_capped_pairs": 0.5,
+"rollouts": 0,
+"rollouts_per_game": 0,
+"buy_decisions": 0,
+"buy_overrides": 0,
+"buy_override_rate": 0.0,
+"action_graded": 0,
+"action_overrides": 0,
+"action_override_rate": 0.0,
+"action_override_kinds": {
+"play where c2 stopped": 0,
+"stop where c2 played": 0,
+"another action": 0
+},
+"latency_s": null,
+"secs_per_game": 0.02
+},
+"buy": {
+"pairs": 300,
+"games": 600,
+"score": 0.56,
+"ci95": [
+0.53,
+0.59
+],
+"capped_games": 4,
+"errored_games": 0,
+"score_without_capped_pairs": 0.5589,
+"rollouts": 3184736,
+"rollouts_per_game": 5308,
+"buy_decisions": 16443,
+"buy_overrides": 645,
+"buy_override_rate": 0.0392,
+"action_graded": 0,
+"action_overrides": 0,
+"action_override_rate": 0.0,
+"action_override_kinds": {
+"play where c2 stopped": 0,
+"stop where c2 played": 0,
+"another action": 0
+},
+"latency_s": {
+"decisions": 16443,
+"p50": 0.7841,
+"p95": 2.5636
+},
+"secs_per_game": 27.22
+},
+"action": {
+"pairs": 300,
+"games": 600,
+"score": 0.5508,
+"ci95": [
+0.5242,
+0.5792
+],
+"capped_games": 2,
+"errored_games": 0,
+"score_without_capped_pairs": 0.551,
+"rollouts": 3393312,
+"rollouts_per_game": 5656,
+"buy_decisions": 0,
+"buy_overrides": 0,
+"buy_override_rate": 0.0,
+"action_graded": 33665,
+"action_overrides": 642,
+"action_override_rate": 0.0191,
+"action_override_kinds": {
+"play where c2 stopped": 0,
+"stop where c2 played": 131,
+"another action": 511
+},
+"latency_s": {
+"decisions": 33665,
+"p50": 0.3975,
+"p95": 1.1291
+},
+"secs_per_game": 26.15
+},
+"both": {
+"pairs": 300,
+"games": 600,
+"score": 0.5883,
+"ci95": [
+0.5558,
+0.6208
+],
+"capped_games": 1,
+"errored_games": 0,
+"score_without_capped_pairs": 0.5903,
+"rollouts": 6506368,
+"rollouts_per_game": 10844,
+"buy_decisions": 15918,
+"buy_overrides": 606,
+"buy_override_rate": 0.0381,
+"action_graded": 33210,
+"action_overrides": 635,
+"action_override_rate": 0.0191,
+"action_override_kinds": {
+"play where c2 stopped": 2,
+"stop where c2 played": 146,
+"another action": 487
+},
+"latency_s": {
+"decisions": 49128,
+"p50": 0.4749,
+"p95": 1.8637
+},
+"secs_per_game": 52.64
+}
+},
+"paired": {
+"buy - mirror": {
+"pairs": 300,
+"diff": 0.06,
+"ci95": [
+0.03,
+0.09
+]
+},
+"action - mirror": {
+"pairs": 300,
+"diff": 0.0508,
+"ci95": [
+0.0233,
+0.0783
+]
+},
+"both - mirror": {
+"pairs": 300,
+"diff": 0.0883,
+"ci95": [
+0.0558,
+0.1208
+]
+},
+"both - buy": {
+"pairs": 300,
+"diff": 0.0283,
+"ci95": [
+-0.0125,
+0.0667
+]
+},
+"both - action": {
+"pairs": 300,
+"diff": 0.0375,
+"ci95": [
+-0.0042,
+0.0775
+]
+},
+"action - buy": {
+"pairs": 300,
+"diff": -0.0092,
+"ci95": [
+-0.0492,
+0.0325
+]
+}
+}
+},
 "pilot": null,
 "bank": null,
 "survive": null,
@@ -21,8 +194,8 @@
 "score": 0.5508333333333333
 },
 "both": {
-"pairs": 255,
-"score": 0.5941176470588235
+"pairs": 300,
+"score": 0.5883333333333334
 }
 }
 }
