@@ -1,0 +1,4328 @@
+{
+ "title": "Divergence analysis: B_s2 against A_s2",
+ "subtitle": "200 games (100 fresh analysis kingdoms, both seats), 24178 decisions of B; divergence = B's arg-max differs from A's on the same position. Help or hurt: exact values on the held-out bank (1000 buy positions, both seeds).",
+ "far_version": "1.0.0",
+ "header": {
+  "model": "B_s2",
+  "vs": "A_s2",
+  "fps": null,
+  "failure": "B_s2 loses the game against A_s2",
+  "event": "a decision where B_s2's choice differs from A_s2's on the same position",
+  "format": "far-episodes-1",
+  "recorded_at": "2026-11-24 17:42",
+  "keep_last": null,
+  "snapshot_every": null
+ },
+ "episodes": 200,
+ "episodes_with_event": 200,
+ "events": 3329,
+ "healthy_steps": 20849,
+ "positive_steps": 6341,
+ "horizon": 3,
+ "window": 40,
+ "fps": null,
+ "event": "divergence",
+ "reference_auc_all_inputs": 0.595,
+ "signals": [
+  {
+   "key": "coins",
+   "label": "coins",
+   "kind": "input",
+   "auc": 0.515,
+   "auc_dir": 0.515,
+   "higher_is_risk": true,
+   "partial_r": 0.001,
+   "normal_median": 2.0,
+   "normal_iqr": [
+    0.0,
+    6.0
+   ],
+   "median_at_event": 2.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "buys",
+   "label": "buys left",
+   "kind": "input",
+   "auc": 0.547,
+   "auc_dir": 0.547,
+   "higher_is_risk": true,
+   "partial_r": -0.001,
+   "normal_median": 1.0,
+   "normal_iqr": [
+    1.0,
+    3.0
+   ],
+   "median_at_event": 1.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "turn",
+   "label": "turn",
+   "kind": "input",
+   "auc": 0.592,
+   "auc_dir": 0.592,
+   "higher_is_risk": true,
+   "partial_r": 0.001,
+   "normal_median": 14.0,
+   "normal_iqr": [
+    12.0,
+    17.0
+   ],
+   "median_at_event": 13.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "vp_diff",
+   "label": "VP lead (scaled)",
+   "kind": "input",
+   "auc": 0.483,
+   "auc_dir": 0.517,
+   "higher_is_risk": false,
+   "partial_r": 0.005,
+   "normal_median": -0.1,
+   "normal_iqr": [
+    -0.8,
+    0.3
+   ],
+   "median_at_event": 0.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "provinces",
+   "label": "Provinces left (scaled)",
+   "kind": "input",
+   "auc": 0.436,
+   "auc_dir": 0.564,
+   "higher_is_risk": false,
+   "partial_r": -0.0,
+   "normal_median": 0.25,
+   "normal_iqr": [
+    0.125,
+    0.625
+   ],
+   "median_at_event": 0.75,
+   "leaves_normal": -40
+  },
+  {
+   "key": "empty",
+   "label": "empty piles (scaled)",
+   "kind": "input",
+   "auc": 0.569,
+   "auc_dir": 0.569,
+   "higher_is_risk": true,
+   "partial_r": 0.001,
+   "normal_median": 0.333,
+   "normal_iqr": [
+    0.0,
+    0.667
+   ],
+   "median_at_event": 0.333,
+   "leaves_normal": null
+  },
+  {
+   "key": "legal",
+   "label": "legal options",
+   "kind": "input",
+   "auc": 0.512,
+   "auc_dir": 0.512,
+   "higher_is_risk": true,
+   "partial_r": 0.003,
+   "normal_median": 3.0,
+   "normal_iqr": [
+    2.0,
+    6.0
+   ],
+   "median_at_event": 4.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "is_buy",
+   "label": "a buy decision",
+   "kind": "input",
+   "auc": 0.477,
+   "auc_dir": 0.523,
+   "higher_is_risk": false,
+   "partial_r": -0.001,
+   "normal_median": 0.0,
+   "normal_iqr": [
+    0.0,
+    1.0
+   ],
+   "median_at_event": 0.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "is_action",
+   "label": "an action decision",
+   "kind": "input",
+   "auc": 0.51,
+   "auc_dir": 0.51,
+   "higher_is_risk": true,
+   "partial_r": -0.0,
+   "normal_median": 0.0,
+   "normal_iqr": [
+    0.0,
+    1.0
+   ],
+   "median_at_event": 0.0,
+   "leaves_normal": null
+  },
+  {
+   "key": "conf",
+   "label": "B's margin between its top two options",
+   "kind": "candidate",
+   "auc": 0.401,
+   "auc_dir": 0.599,
+   "higher_is_risk": false,
+   "partial_r": 0.156,
+   "normal_median": 0.999,
+   "normal_iqr": [
+    0.915,
+    1.0
+   ],
+   "median_at_event": 0.274,
+   "leaves_normal": -15
+  },
+  {
+   "key": "value",
+   "label": "B's win estimate",
+   "kind": "candidate",
+   "auc": 0.514,
+   "auc_dir": 0.514,
+   "higher_is_risk": true,
+   "partial_r": -0.031,
+   "normal_median": 0.127,
+   "normal_iqr": [
+    -0.525,
+    0.764
+   ],
+   "median_at_event": 0.166,
+   "leaves_normal": null
+  },
+  {
+   "key": "c2_moves",
+   "label": "A differs from c2 here",
+   "kind": "candidate",
+   "auc": 0.511,
+   "auc_dir": 0.511,
+   "higher_is_risk": true,
+   "partial_r": -0.03,
+   "normal_median": 0.0,
+   "normal_iqr": [
+    0.0,
+    0.0
+   ],
+   "median_at_event": 1.0,
+   "leaves_normal": 0
+  },
+  {
+   "key": "noise",
+   "label": "random noise (control)",
+   "kind": "candidate",
+   "auc": 0.502,
+   "auc_dir": 0.502,
+   "higher_is_risk": true,
+   "partial_r": 0.002,
+   "normal_median": 0.006,
+   "normal_iqr": [
+    -0.644,
+    0.694
+   ],
+   "median_at_event": 0.025,
+   "leaves_normal": null
+  }
+ ],
+ "causes": {
+  "On a buy": {
+   "share": 0.271,
+   "chance": 0.205
+  },
+  "On an action decision": {
+   "share": 0.396,
+   "chance": 0.44
+  },
+  "B keeps c2's choice (A moved away)": {
+   "share": 0.444,
+   "chance": null
+  },
+  "Late game (turn > 12)": {
+   "share": 0.571,
+   "chance": 0.415
+  }
+ },
+ "outcomes": [
+  {
+   "seed": 1626709560,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Remodel",
+    "Smithy",
+    "Throne Room",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 114,
+   "score": -6
+  },
+  {
+   "seed": 1626709560,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Remodel",
+    "Smithy",
+    "Throne Room",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 112,
+   "score": 5
+  },
+  {
+   "seed": 442338704,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Festival",
+    "Gardens",
+    "Library",
+    "Militia",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 50,
+   "score": 3
+  },
+  {
+   "seed": 442338704,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Festival",
+    "Gardens",
+    "Library",
+    "Militia",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 58,
+   "score": 11
+  },
+  {
+   "seed": 112170792,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Chapel",
+    "Festival",
+    "Laboratory",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 151,
+   "score": 29
+  },
+  {
+   "seed": 112170792,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Chapel",
+    "Festival",
+    "Laboratory",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 139,
+   "score": -32
+  },
+  {
+   "seed": 3378842862,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Remodel",
+    "Throne Room",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 127,
+   "score": 16
+  },
+  {
+   "seed": 3378842862,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Remodel",
+    "Throne Room",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 130,
+   "score": -48
+  },
+  {
+   "seed": 433410136,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 122,
+   "score": -13
+  },
+  {
+   "seed": 433410136,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 115,
+   "score": 15
+  },
+  {
+   "seed": 2618320961,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Laboratory",
+    "Library",
+    "Mine",
+    "Moat",
+    "Remodel",
+    "Smithy",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 27,
+   "score": 7
+  },
+  {
+   "seed": 2618320961,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Laboratory",
+    "Library",
+    "Mine",
+    "Moat",
+    "Remodel",
+    "Smithy",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 54,
+   "score": 5
+  },
+  {
+   "seed": 761088327,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Gardens",
+    "Library",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 187,
+   "score": -24
+  },
+  {
+   "seed": 761088327,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Gardens",
+    "Library",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 136,
+   "score": 39
+  },
+  {
+   "seed": 1866455797,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Remodel",
+    "Throne Room",
+    "Vassal",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 123,
+   "score": 27
+  },
+  {
+   "seed": 1866455797,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Remodel",
+    "Throne Room",
+    "Vassal",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 217,
+   "score": 26
+  },
+  {
+   "seed": 3417411247,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Library",
+    "Market",
+    "Militia",
+    "Moat",
+    "Remodel",
+    "Smithy",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 87,
+   "score": 1
+  },
+  {
+   "seed": 3417411247,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Library",
+    "Market",
+    "Militia",
+    "Moat",
+    "Remodel",
+    "Smithy",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 37,
+   "score": -16
+  },
+  {
+   "seed": 4084722153,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Merchant",
+    "Mine",
+    "Smithy",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 38,
+   "score": -4
+  },
+  {
+   "seed": 4084722153,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Merchant",
+    "Mine",
+    "Smithy",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 33,
+   "score": 2
+  },
+  {
+   "seed": 154003054,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Festival",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Poacher",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 93,
+   "score": -9
+  },
+  {
+   "seed": 154003054,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Festival",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Poacher",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 82,
+   "score": -18
+  },
+  {
+   "seed": 1486487374,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moneylender",
+    "Smithy",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 42,
+   "score": 16
+  },
+  {
+   "seed": 1486487374,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moneylender",
+    "Smithy",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 48,
+   "score": -14
+  },
+  {
+   "seed": 63239442,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Festival",
+    "Harbinger",
+    "Library",
+    "Moneylender",
+    "Smithy",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 37,
+   "score": 12
+  },
+  {
+   "seed": 63239442,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Festival",
+    "Harbinger",
+    "Library",
+    "Moneylender",
+    "Smithy",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 112,
+   "score": -24
+  },
+  {
+   "seed": 3927855632,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 137,
+   "score": 31
+  },
+  {
+   "seed": 3927855632,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 204,
+   "score": -39
+  },
+  {
+   "seed": 539412546,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Harbinger",
+    "Library",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Poacher",
+    "Sentry",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 152,
+   "score": -7
+  },
+  {
+   "seed": 539412546,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Harbinger",
+    "Library",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Poacher",
+    "Sentry",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 165,
+   "score": -9
+  },
+  {
+   "seed": 91309126,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Harbinger",
+    "Laboratory",
+    "Militia",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Sentry",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 161,
+   "score": 20
+  },
+  {
+   "seed": 91309126,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Harbinger",
+    "Laboratory",
+    "Militia",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Sentry",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 190,
+   "score": -12
+  },
+  {
+   "seed": 1545657895,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 122,
+   "score": 16
+  },
+  {
+   "seed": 1545657895,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "tie",
+   "steps": 71,
+   "score": 0
+  },
+  {
+   "seed": 2018160229,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Gardens",
+    "Moat",
+    "Remodel",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 99,
+   "score": 18
+  },
+  {
+   "seed": 2018160229,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Gardens",
+    "Moat",
+    "Remodel",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 83,
+   "score": 27
+  },
+  {
+   "seed": 1585918662,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Gardens",
+    "Laboratory",
+    "Militia",
+    "Moneylender",
+    "Smithy",
+    "Throne Room",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 140,
+   "score": -6
+  },
+  {
+   "seed": 1585918662,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Gardens",
+    "Laboratory",
+    "Militia",
+    "Moneylender",
+    "Smithy",
+    "Throne Room",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 137,
+   "score": -5
+  },
+  {
+   "seed": 2581622180,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Harbinger",
+    "Laboratory",
+    "Mine",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 100,
+   "score": 10
+  },
+  {
+   "seed": 2581622180,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Harbinger",
+    "Laboratory",
+    "Mine",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 85,
+   "score": -21
+  },
+  {
+   "seed": 3107320856,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Merchant",
+    "Moneylender",
+    "Sentry",
+    "Throne Room",
+    "Village",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 160,
+   "score": 0
+  },
+  {
+   "seed": 3107320856,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Merchant",
+    "Moneylender",
+    "Sentry",
+    "Throne Room",
+    "Village",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 152,
+   "score": -2
+  },
+  {
+   "seed": 4280402875,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Festival",
+    "Laboratory",
+    "Market",
+    "Militia",
+    "Moat",
+    "Sentry",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 198,
+   "score": 22
+  },
+  {
+   "seed": 4280402875,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Festival",
+    "Laboratory",
+    "Market",
+    "Militia",
+    "Moat",
+    "Sentry",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 242,
+   "score": -44
+  },
+  {
+   "seed": 2919166160,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Gardens",
+    "Harbinger",
+    "Market",
+    "Militia",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 59,
+   "score": 5
+  },
+  {
+   "seed": 2919166160,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Gardens",
+    "Harbinger",
+    "Market",
+    "Militia",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 61,
+   "score": -9
+  },
+  {
+   "seed": 3827768516,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Chapel",
+    "Gardens",
+    "Mine",
+    "Moneylender",
+    "Remodel",
+    "Smithy",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 63,
+   "score": -1
+  },
+  {
+   "seed": 3827768516,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Chapel",
+    "Gardens",
+    "Mine",
+    "Moneylender",
+    "Remodel",
+    "Smithy",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 221,
+   "score": -9
+  },
+  {
+   "seed": 2331871105,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Militia",
+    "Moneylender",
+    "Smithy",
+    "Throne Room",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 43,
+   "score": -6
+  },
+  {
+   "seed": 2331871105,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Militia",
+    "Moneylender",
+    "Smithy",
+    "Throne Room",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 55,
+   "score": -2
+  },
+  {
+   "seed": 706534515,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Merchant",
+    "Militia",
+    "Remodel",
+    "Vassal",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 152,
+   "score": 21
+  },
+  {
+   "seed": 706534515,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Merchant",
+    "Militia",
+    "Remodel",
+    "Vassal",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 83,
+   "score": -18
+  },
+  {
+   "seed": 1210064044,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Library",
+    "Mine",
+    "Remodel",
+    "Sentry",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 142,
+   "score": 4
+  },
+  {
+   "seed": 1210064044,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Library",
+    "Mine",
+    "Remodel",
+    "Sentry",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 140,
+   "score": 41
+  },
+  {
+   "seed": 3561136242,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Militia",
+    "Mine",
+    "Smithy",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 358,
+   "score": 34
+  },
+  {
+   "seed": 3561136242,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Militia",
+    "Mine",
+    "Smithy",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 182,
+   "score": -19
+  },
+  {
+   "seed": 560059312,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 66,
+   "score": -2
+  },
+  {
+   "seed": 560059312,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 88,
+   "score": -1
+  },
+  {
+   "seed": 3312857002,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Remodel",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 92,
+   "score": 13
+  },
+  {
+   "seed": 3312857002,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Remodel",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 126,
+   "score": 10
+  },
+  {
+   "seed": 1523758366,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Gardens",
+    "Market",
+    "Merchant",
+    "Poacher",
+    "Remodel",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 161,
+   "score": 20
+  },
+  {
+   "seed": 1523758366,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Gardens",
+    "Market",
+    "Merchant",
+    "Poacher",
+    "Remodel",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 121,
+   "score": -19
+  },
+  {
+   "seed": 1123158190,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Festival",
+    "Market",
+    "Militia",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Vassal",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 188,
+   "score": 3
+  },
+  {
+   "seed": 1123158190,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Festival",
+    "Market",
+    "Militia",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Vassal",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 183,
+   "score": 19
+  },
+  {
+   "seed": 2763426580,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Harbinger",
+    "Library",
+    "Market",
+    "Sentry",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 212,
+   "score": 18
+  },
+  {
+   "seed": 2763426580,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Harbinger",
+    "Library",
+    "Market",
+    "Sentry",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 297,
+   "score": -34
+  },
+  {
+   "seed": 2113723820,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Laboratory",
+    "Market",
+    "Merchant",
+    "Moat",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "tie",
+   "steps": 83,
+   "score": 0
+  },
+  {
+   "seed": 2113723820,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Laboratory",
+    "Market",
+    "Merchant",
+    "Moat",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 117,
+   "score": 8
+  },
+  {
+   "seed": 3765272211,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Chapel",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Moat",
+    "Remodel",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 94,
+   "score": 8
+  },
+  {
+   "seed": 3765272211,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Chapel",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Moat",
+    "Remodel",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 121,
+   "score": 21
+  },
+  {
+   "seed": 2862897870,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Merchant",
+    "Sentry",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 85,
+   "score": -1
+  },
+  {
+   "seed": 2862897870,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Merchant",
+    "Sentry",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 94,
+   "score": 5
+  },
+  {
+   "seed": 4231097446,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 70,
+   "score": -2
+  },
+  {
+   "seed": 4231097446,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 74,
+   "score": -17
+  },
+  {
+   "seed": 2171403238,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Laboratory",
+    "Market",
+    "Mine",
+    "Moat",
+    "Sentry",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 173,
+   "score": 1
+  },
+  {
+   "seed": 2171403238,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Laboratory",
+    "Market",
+    "Mine",
+    "Moat",
+    "Sentry",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 186,
+   "score": 17
+  },
+  {
+   "seed": 1887641490,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Merchant",
+    "Moneylender",
+    "Poacher"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 169,
+   "score": 0
+  },
+  {
+   "seed": 1887641490,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Merchant",
+    "Moneylender",
+    "Poacher"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 36,
+   "score": -3
+  },
+  {
+   "seed": 3600897150,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 137,
+   "score": 27
+  },
+  {
+   "seed": 3600897150,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 81,
+   "score": -24
+  },
+  {
+   "seed": 1164041378,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Festival",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 55,
+   "score": 11
+  },
+  {
+   "seed": 1164041378,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Festival",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 108,
+   "score": -4
+  },
+  {
+   "seed": 3280041212,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Festival",
+    "Library",
+    "Market",
+    "Militia",
+    "Moat",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 189,
+   "score": 14
+  },
+  {
+   "seed": 3280041212,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Festival",
+    "Library",
+    "Market",
+    "Militia",
+    "Moat",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 226,
+   "score": 36
+  },
+  {
+   "seed": 3045766598,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Festival",
+    "Gardens",
+    "Harbinger",
+    "Library",
+    "Mine",
+    "Sentry",
+    "Smithy",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 188,
+   "score": 23
+  },
+  {
+   "seed": 3045766598,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Festival",
+    "Gardens",
+    "Harbinger",
+    "Library",
+    "Mine",
+    "Sentry",
+    "Smithy",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 228,
+   "score": -29
+  },
+  {
+   "seed": 3911395590,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moneylender",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 114,
+   "score": 6
+  },
+  {
+   "seed": 3911395590,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Bureaucrat",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Mine",
+    "Moneylender",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 95,
+   "score": -7
+  },
+  {
+   "seed": 3425260815,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Moneylender",
+    "Sentry",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 143,
+   "score": -8
+  },
+  {
+   "seed": 3425260815,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Market",
+    "Moneylender",
+    "Sentry",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 230,
+   "score": 3
+  },
+  {
+   "seed": 894665966,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Poacher",
+    "Smithy",
+    "Throne Room",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 87,
+   "score": -15
+  },
+  {
+   "seed": 894665966,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Poacher",
+    "Smithy",
+    "Throne Room",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 96,
+   "score": -4
+  },
+  {
+   "seed": 519901816,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 110,
+   "score": 0
+  },
+  {
+   "seed": 519901816,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 98,
+   "score": -9
+  },
+  {
+   "seed": 693153660,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Cellar",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 40,
+   "score": -13
+  },
+  {
+   "seed": 693153660,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Cellar",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Vassal",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 29,
+   "score": -1
+  },
+  {
+   "seed": 292138080,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 48,
+   "score": 11
+  },
+  {
+   "seed": 292138080,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Merchant",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 37,
+   "score": -9
+  },
+  {
+   "seed": 761687493,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Festival",
+    "Gardens",
+    "Laboratory",
+    "Merchant",
+    "Moat",
+    "Poacher",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 44,
+   "score": 18
+  },
+  {
+   "seed": 761687493,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Festival",
+    "Gardens",
+    "Laboratory",
+    "Merchant",
+    "Moat",
+    "Poacher",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 167,
+   "score": -1
+  },
+  {
+   "seed": 2309673405,
+   "seat": 0,
+   "kingdom": [
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Sentry"
+   ],
+   "failed": false,
+   "cause": "tie",
+   "steps": 65,
+   "score": 0
+  },
+  {
+   "seed": 2309673405,
+   "seat": 1,
+   "kingdom": [
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Sentry"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 73,
+   "score": -10
+  },
+  {
+   "seed": 659446823,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Council Room",
+    "Library",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 69,
+   "score": 15
+  },
+  {
+   "seed": 659446823,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Council Room",
+    "Library",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 108,
+   "score": -15
+  },
+  {
+   "seed": 3752768276,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Harbinger",
+    "Library",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 80,
+   "score": -2
+  },
+  {
+   "seed": 3752768276,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Chapel",
+    "Harbinger",
+    "Library",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 107,
+   "score": 6
+  },
+  {
+   "seed": 2282930858,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Festival",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 195,
+   "score": 7
+  },
+  {
+   "seed": 2282930858,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Festival",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 131,
+   "score": -11
+  },
+  {
+   "seed": 2891679747,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Council Room",
+    "Gardens",
+    "Library",
+    "Moat",
+    "Poacher",
+    "Remodel",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 114,
+   "score": 20
+  },
+  {
+   "seed": 2891679747,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Council Room",
+    "Gardens",
+    "Library",
+    "Moat",
+    "Poacher",
+    "Remodel",
+    "Village",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 127,
+   "score": -15
+  },
+  {
+   "seed": 2385512101,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Moat",
+    "Sentry",
+    "Vassal",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 112,
+   "score": 19
+  },
+  {
+   "seed": 2385512101,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Moat",
+    "Sentry",
+    "Vassal",
+    "Village",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 146,
+   "score": -12
+  },
+  {
+   "seed": 240558276,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Moat",
+    "Poacher",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 165,
+   "score": 5
+  },
+  {
+   "seed": 240558276,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Moat",
+    "Poacher",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 106,
+   "score": -26
+  },
+  {
+   "seed": 4178907530,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Gardens",
+    "Merchant",
+    "Mine",
+    "Moat",
+    "Sentry",
+    "Vassal",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 270,
+   "score": 19
+  },
+  {
+   "seed": 4178907530,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Gardens",
+    "Merchant",
+    "Mine",
+    "Moat",
+    "Sentry",
+    "Vassal",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 190,
+   "score": -26
+  },
+  {
+   "seed": 2338419758,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Laboratory",
+    "Market",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 93,
+   "score": -9
+  },
+  {
+   "seed": 2338419758,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Laboratory",
+    "Market",
+    "Moneylender",
+    "Poacher",
+    "Sentry",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 130,
+   "score": 15
+  },
+  {
+   "seed": 1292032999,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 142,
+   "score": -25
+  },
+  {
+   "seed": 1292032999,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Chapel",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 110,
+   "score": -32
+  },
+  {
+   "seed": 1594371967,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 101,
+   "score": -1
+  },
+  {
+   "seed": 1594371967,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 102,
+   "score": 6
+  },
+  {
+   "seed": 4084866600,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Gardens",
+    "Harbinger",
+    "Market",
+    "Militia",
+    "Mine",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 106,
+   "score": 9
+  },
+  {
+   "seed": 4084866600,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Gardens",
+    "Harbinger",
+    "Market",
+    "Militia",
+    "Mine",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 121,
+   "score": -13
+  },
+  {
+   "seed": 2858070299,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Cellar",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Remodel",
+    "Throne Room",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 72,
+   "score": 9
+  },
+  {
+   "seed": 2858070299,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Cellar",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Remodel",
+    "Throne Room",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 109,
+   "score": -8
+  },
+  {
+   "seed": 732521498,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Poacher",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 134,
+   "score": 8
+  },
+  {
+   "seed": 732521498,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Laboratory",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Moat",
+    "Poacher",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 145,
+   "score": 22
+  },
+  {
+   "seed": 1356699193,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Festival",
+    "Merchant",
+    "Moneylender",
+    "Poacher",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 43,
+   "score": 6
+  },
+  {
+   "seed": 1356699193,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Festival",
+    "Merchant",
+    "Moneylender",
+    "Poacher",
+    "Smithy",
+    "Throne Room",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 50,
+   "score": -6
+  },
+  {
+   "seed": 3144373366,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Chapel",
+    "Harbinger",
+    "Library",
+    "Merchant",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 175,
+   "score": -2
+  },
+  {
+   "seed": 3144373366,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Chapel",
+    "Harbinger",
+    "Library",
+    "Merchant",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 187,
+   "score": 17
+  },
+  {
+   "seed": 1799606428,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Poacher",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 109,
+   "score": 12
+  },
+  {
+   "seed": 1799606428,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Poacher",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 118,
+   "score": 12
+  },
+  {
+   "seed": 3113433374,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Library",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 79,
+   "score": -12
+  },
+  {
+   "seed": 3113433374,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Chapel",
+    "Council Room",
+    "Harbinger",
+    "Library",
+    "Mine",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 55,
+   "score": -6
+  },
+  {
+   "seed": 2021200103,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 184,
+   "score": 11
+  },
+  {
+   "seed": 2021200103,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Council Room",
+    "Festival",
+    "Library",
+    "Merchant",
+    "Militia",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 217,
+   "score": 15
+  },
+  {
+   "seed": 1773737910,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Gardens",
+    "Laboratory",
+    "Militia",
+    "Mine",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 126,
+   "score": 11
+  },
+  {
+   "seed": 1773737910,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Gardens",
+    "Laboratory",
+    "Militia",
+    "Mine",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 78,
+   "score": 11
+  },
+  {
+   "seed": 3647247579,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Laboratory",
+    "Library",
+    "Militia",
+    "Moneylender",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 160,
+   "score": -13
+  },
+  {
+   "seed": 3647247579,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Laboratory",
+    "Library",
+    "Militia",
+    "Moneylender",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 111,
+   "score": 12
+  },
+  {
+   "seed": 936343805,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Remodel",
+    "Smithy",
+    "Vassal",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 161,
+   "score": 10
+  },
+  {
+   "seed": 936343805,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Remodel",
+    "Smithy",
+    "Vassal",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 124,
+   "score": 5
+  },
+  {
+   "seed": 2447064647,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Festival",
+    "Gardens",
+    "Market",
+    "Militia",
+    "Remodel",
+    "Sentry",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 273,
+   "score": 13
+  },
+  {
+   "seed": 2447064647,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Festival",
+    "Gardens",
+    "Market",
+    "Militia",
+    "Remodel",
+    "Sentry",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 359,
+   "score": 17
+  },
+  {
+   "seed": 3746640038,
+   "seat": 0,
+   "kingdom": [
+    "Council Room",
+    "Festival",
+    "Laboratory",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 59,
+   "score": -12
+  },
+  {
+   "seed": 3746640038,
+   "seat": 1,
+   "kingdom": [
+    "Council Room",
+    "Festival",
+    "Laboratory",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "tie",
+   "steps": 37,
+   "score": 0
+  },
+  {
+   "seed": 1191292273,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Library",
+    "Market",
+    "Merchant",
+    "Moat",
+    "Moneylender",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 128,
+   "score": -6
+  },
+  {
+   "seed": 1191292273,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Library",
+    "Market",
+    "Merchant",
+    "Moat",
+    "Moneylender",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 151,
+   "score": -1
+  },
+  {
+   "seed": 271687601,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Festival",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Moneylender",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 144,
+   "score": 3
+  },
+  {
+   "seed": 271687601,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Festival",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Moneylender",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 190,
+   "score": 15
+  },
+  {
+   "seed": 3477514313,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Chapel",
+    "Library",
+    "Militia",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 51,
+   "score": -2
+  },
+  {
+   "seed": 3477514313,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Chapel",
+    "Library",
+    "Militia",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 46,
+   "score": 2
+  },
+  {
+   "seed": 1434825423,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Harbinger",
+    "Library",
+    "Merchant",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Throne Room",
+    "Village",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 123,
+   "score": 15
+  },
+  {
+   "seed": 1434825423,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Harbinger",
+    "Library",
+    "Merchant",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Throne Room",
+    "Village",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 95,
+   "score": -24
+  },
+  {
+   "seed": 1877670093,
+   "seat": 0,
+   "kingdom": [
+    "Council Room",
+    "Festival",
+    "Library",
+    "Market",
+    "Merchant",
+    "Mine",
+    "Vassal",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 34,
+   "score": -2
+  },
+  {
+   "seed": 1877670093,
+   "seat": 1,
+   "kingdom": [
+    "Council Room",
+    "Festival",
+    "Library",
+    "Market",
+    "Merchant",
+    "Mine",
+    "Vassal",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 53,
+   "score": 20
+  },
+  {
+   "seed": 3249990989,
+   "seat": 0,
+   "kingdom": [
+    "Cellar",
+    "Harbinger",
+    "Laboratory",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Mine",
+    "Poacher",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 45,
+   "score": 19
+  },
+  {
+   "seed": 3249990989,
+   "seat": 1,
+   "kingdom": [
+    "Cellar",
+    "Harbinger",
+    "Laboratory",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Mine",
+    "Poacher",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 76,
+   "score": -14
+  },
+  {
+   "seed": 2106508600,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Merchant",
+    "Moneylender",
+    "Poacher",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 108,
+   "score": -17
+  },
+  {
+   "seed": 2106508600,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Merchant",
+    "Moneylender",
+    "Poacher",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 156,
+   "score": -1
+  },
+  {
+   "seed": 53473126,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Gardens",
+    "Moat",
+    "Moneylender",
+    "Sentry",
+    "Throne Room",
+    "Vassal",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 110,
+   "score": -16
+  },
+  {
+   "seed": 53473126,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Bureaucrat",
+    "Gardens",
+    "Moat",
+    "Moneylender",
+    "Sentry",
+    "Throne Room",
+    "Vassal",
+    "Village",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 135,
+   "score": -6
+  },
+  {
+   "seed": 2574943661,
+   "seat": 0,
+   "kingdom": [
+    "Festival",
+    "Gardens",
+    "Harbinger",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 66,
+   "score": 4
+  },
+  {
+   "seed": 2574943661,
+   "seat": 1,
+   "kingdom": [
+    "Festival",
+    "Gardens",
+    "Harbinger",
+    "Market",
+    "Merchant",
+    "Militia",
+    "Poacher",
+    "Village",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 59,
+   "score": -11
+  },
+  {
+   "seed": 3930005822,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Chapel",
+    "Council Room",
+    "Gardens",
+    "Harbinger",
+    "Merchant",
+    "Smithy",
+    "Throne Room",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 141,
+   "score": -5
+  },
+  {
+   "seed": 3930005822,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bureaucrat",
+    "Chapel",
+    "Council Room",
+    "Gardens",
+    "Harbinger",
+    "Merchant",
+    "Smithy",
+    "Throne Room",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 67,
+   "score": -38
+  },
+  {
+   "seed": 3723116343,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Festival",
+    "Gardens",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 75,
+   "score": 8
+  },
+  {
+   "seed": 3723116343,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Festival",
+    "Gardens",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moat",
+    "Moneylender",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 125,
+   "score": -39
+  },
+  {
+   "seed": 1555061737,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Chapel",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Mine",
+    "Remodel",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 74,
+   "score": -22
+  },
+  {
+   "seed": 1555061737,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Cellar",
+    "Chapel",
+    "Gardens",
+    "Laboratory",
+    "Library",
+    "Market",
+    "Mine",
+    "Remodel",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 118,
+   "score": -2
+  },
+  {
+   "seed": 1221145762,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Chapel",
+    "Festival",
+    "Library",
+    "Market",
+    "Merchant",
+    "Mine",
+    "Moat",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 153,
+   "score": 5
+  },
+  {
+   "seed": 1221145762,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Chapel",
+    "Festival",
+    "Library",
+    "Market",
+    "Merchant",
+    "Mine",
+    "Moat",
+    "Smithy",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 117,
+   "score": -6
+  },
+  {
+   "seed": 1370646315,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Chapel",
+    "Gardens",
+    "Library",
+    "Mine",
+    "Moat",
+    "Poacher",
+    "Sentry",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 64,
+   "score": -1
+  },
+  {
+   "seed": 1370646315,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Chapel",
+    "Gardens",
+    "Library",
+    "Mine",
+    "Moat",
+    "Poacher",
+    "Sentry",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 73,
+   "score": 1
+  },
+  {
+   "seed": 1114559861,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Library",
+    "Militia",
+    "Poacher",
+    "Sentry",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 246,
+   "score": 31
+  },
+  {
+   "seed": 1114559861,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Library",
+    "Militia",
+    "Poacher",
+    "Sentry",
+    "Witch",
+    "Workshop"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 256,
+   "score": -32
+  },
+  {
+   "seed": 1893441211,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Festival",
+    "Library",
+    "Market",
+    "Mine",
+    "Moat",
+    "Remodel",
+    "Sentry",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 125,
+   "score": 12
+  },
+  {
+   "seed": 1893441211,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Festival",
+    "Library",
+    "Market",
+    "Mine",
+    "Moat",
+    "Remodel",
+    "Sentry",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 63,
+   "score": -24
+  },
+  {
+   "seed": 1034821264,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 122,
+   "score": -15
+  },
+  {
+   "seed": 1034821264,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Council Room",
+    "Harbinger",
+    "Market",
+    "Moneylender",
+    "Remodel",
+    "Sentry",
+    "Smithy",
+    "Vassal",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 127,
+   "score": 3
+  },
+  {
+   "seed": 2089745284,
+   "seat": 0,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Council Room",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 87,
+   "score": 16
+  },
+  {
+   "seed": 2089745284,
+   "seat": 1,
+   "kingdom": [
+    "Bandit",
+    "Cellar",
+    "Council Room",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Throne Room",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 142,
+   "score": 35
+  },
+  {
+   "seed": 1211063468,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Merchant",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Throne Room",
+    "Vassal"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 86,
+   "score": 5
+  },
+  {
+   "seed": 1211063468,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Council Room",
+    "Festival",
+    "Merchant",
+    "Moat",
+    "Moneylender",
+    "Poacher",
+    "Throne Room",
+    "Vassal"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 95,
+   "score": -4
+  },
+  {
+   "seed": 1514475279,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Harbinger",
+    "Library",
+    "Market",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 194,
+   "score": -6
+  },
+  {
+   "seed": 1514475279,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Harbinger",
+    "Library",
+    "Market",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Throne Room",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 74,
+   "score": 7
+  },
+  {
+   "seed": 337250255,
+   "seat": 0,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Festival",
+    "Library",
+    "Market",
+    "Militia",
+    "Sentry",
+    "Throne Room",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 238,
+   "score": -8
+  },
+  {
+   "seed": 337250255,
+   "seat": 1,
+   "kingdom": [
+    "Bureaucrat",
+    "Cellar",
+    "Festival",
+    "Library",
+    "Market",
+    "Militia",
+    "Sentry",
+    "Throne Room",
+    "Vassal",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 189,
+   "score": 26
+  },
+  {
+   "seed": 264093942,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Mine",
+    "Remodel",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 164,
+   "score": 18
+  },
+  {
+   "seed": 264093942,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Harbinger",
+    "Laboratory",
+    "Library",
+    "Mine",
+    "Remodel",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 143,
+   "score": -18
+  },
+  {
+   "seed": 2748953893,
+   "seat": 0,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Moat",
+    "Remodel",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 81,
+   "score": 15
+  },
+  {
+   "seed": 2748953893,
+   "seat": 1,
+   "kingdom": [
+    "Chapel",
+    "Council Room",
+    "Festival",
+    "Gardens",
+    "Harbinger",
+    "Laboratory",
+    "Moat",
+    "Remodel",
+    "Sentry",
+    "Smithy"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 70,
+   "score": -4
+  },
+  {
+   "seed": 3973805819,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Merchant",
+    "Mine",
+    "Moat",
+    "Remodel",
+    "Throne Room"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 161,
+   "score": 6
+  },
+  {
+   "seed": 3973805819,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Festival",
+    "Harbinger",
+    "Merchant",
+    "Mine",
+    "Moat",
+    "Remodel",
+    "Throne Room"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 111,
+   "score": -3
+  },
+  {
+   "seed": 3405815299,
+   "seat": 0,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Gardens",
+    "Market",
+    "Moat",
+    "Poacher",
+    "Vassal",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 167,
+   "score": 1
+  },
+  {
+   "seed": 3405815299,
+   "seat": 1,
+   "kingdom": [
+    "Artisan",
+    "Bandit",
+    "Chapel",
+    "Gardens",
+    "Market",
+    "Moat",
+    "Poacher",
+    "Vassal",
+    "Village",
+    "Witch"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 133,
+   "score": 1
+  },
+  {
+   "seed": 3406103256,
+   "seat": 0,
+   "kingdom": [
+    "Council Room",
+    "Festival",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": true,
+   "cause": "loss",
+   "steps": 100,
+   "score": -3
+  },
+  {
+   "seed": 3406103256,
+   "seat": 1,
+   "kingdom": [
+    "Council Room",
+    "Festival",
+    "Market",
+    "Militia",
+    "Mine",
+    "Moneylender",
+    "Poacher",
+    "Remodel",
+    "Smithy",
+    "Village"
+   ],
+   "failed": false,
+   "cause": "win",
+   "steps": 85,
+   "score": 0
+  }
+ ],
+ "bank": {
+  "positions": 1000,
+  "differences": 431,
+  "mean_gain": 0.002573955916473318,
+  "helps": 0.18793503480278423,
+  "hurts": 0.15777262180974477,
+  "by_phase": {
+   "opening": -0.0004750844594594595,
+   "middle": 0.006125,
+   "late": 0.0013432272304832714
+  },
+  "by_opponent": {
+   "c2": -0.0018780048076923077,
+   "c1": 0.02185522151898734,
+   "RL-v1": -0.004757116336633663,
+   "GA2": 0.0008877840909090909
+  },
+  "worst_cards": [
+   [
+    "Chapel",
+    -0.003753491620111732,
+    179
+   ],
+   [
+    "Gardens",
+    -0.0033915751689189188,
+    148
+   ],
+   [
+    "Market",
+    -0.0021475537330316744,
+    221
+   ],
+   [
+    "Moat",
+    -0.0015111019736842105,
+    190
+   ],
+   [
+    "Workshop",
+    -0.001123046875,
+    160
+   ]
+  ],
+  "best_cards": [
+   [
+    "Artisan",
+    0.006330007530120482,
+    166
+   ],
+   [
+    "Witch",
+    0.007373280502392344,
+    209
+   ],
+   [
+    "Harbinger",
+    0.008038481404958678,
+    121
+   ],
+   [
+    "Remodel",
+    0.010555186170212765,
+    94
+   ],
+   [
+    "Poacher",
+    0.019318953804347828,
+    92
+   ]
+  ]
+ }
+}
