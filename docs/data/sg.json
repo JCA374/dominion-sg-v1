@@ -1677,13 +1677,13 @@
 "cpu_hours": "6.1461"
 },
 "B_s2": {
-"iter": "58",
-"eval_vs_c2": "0.5175",
-"eval_vs_c1": "0.5325",
-"eval_GA_base": "0.8825",
-"eval_champion": "0.68",
-"games_total": "174000",
-"cpu_hours": "3.6677"
+"iter": "80",
+"eval_vs_c2": "0.5675",
+"eval_vs_c1": "0.545",
+"eval_GA_base": "0.8925",
+"eval_champion": "0.7125",
+"games_total": "240000",
+"cpu_hours": "5.0338"
 }
 },
 "ablation_live": {
