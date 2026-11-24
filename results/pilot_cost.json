@@ -1,0 +1,3 @@
+{"labels": 20120, "games": 707, "rollouts": 4463104, "capped_rollouts": 11607, "engine_errors": 0, "rejected": 0,
+ "wall_secs": 2828, "workers": 7, "cpu_hours_approx": 5.5,
+ "note": "Branch B's extra cost before PPO: the pilot labels (7 workers x 47 min). The bank and survival check are evaluation, not training cost; the supervised fit took about 3 minutes."}
