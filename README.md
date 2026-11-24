@@ -70,7 +70,13 @@ Live table; `results/` has the files.
 | 2 | Survival of the 31 proposed overrides on the bank (64 fresh draws) | still > margin: simulator 52%, public 61%, mixture 61%, public + mixture 71% (bank values: 74%): the public view does not undo them |
 | 3 | Supervised c2, sweep of anchor weight (dev) | weak anchors wreck c2 (λ 1, z 1: **21.7%** vs c2); λ 100–300: 51.6–52.5% (dev, best of 5) |
 | 3 | Chosen: s_z2_l100 (λ 100, z 2 pairs) | dev vs c2 52.5% [49.3, 55.8]; bank: 7.2% of buys changed, mean gain +0.0008; held-out pairs 5% taken (not generalising) |
-| 4 | Matched PPO A / B, seeds s1, s2, 100 iterations each | running |
+| 4 | Matched PPO A / B, seeds s1, s2, 100 iterations each (300,000 training games per run) | done |
+| 4 | Matrix (500 fresh kingdoms × 2): vs frozen c2 | A_s1 51.0 [48.5, 53.4], A_s2 51.9 [49.4, 54.5], B_s1 50.1 [47.4, 52.8], B_s2 54.6 [51.9, 57.2] |
+| 4 | Matrix: vs c1 / RL-v1 r2 2200 / GA2 | A 51.4–54.1 / 71.5–71.7 / 86.5–87.6; B 53.2–54.8 / 70.6–72.3 / 85.0–87.4 (plain c2 vs GA2 86.4) |
+| 4 | Matrix: B vs A on the same seed | s1 **53.8%** [51.2, 56.5], s2 51.2% [48.5, 54.0] |
+| 4 | **Promotion** (2,000 fresh kingdoms × 2, once): vs frozen c2 | A_s2 **51.4%** [50.0, 52.8], B_s2 **49.9%** [48.6, 51.2]: neither reaches 53%; B_s2's matrix 54.6% did not hold (selected as the best of two seeds) |
+| 4 | Promotion: vs GA2 (plain c2 86.3%) and card slices | A 86.5%, B 87.3%; worst card slice −0.9 / −0.7 points: no regression |
+| — | **Decision** | **nothing promoted; B (search-guided) did not consistently beat A (PPO only)**. The supervised approach is not extended. |
 
 ## Optimizations measured
 
